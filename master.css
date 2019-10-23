@@ -27,8 +27,8 @@ h1, h2{
 	text-transform: uppercase;
 }
  .column {
-		width:300px;
-		display: inline-block;
+		width:90%;
+		display: block;
 }
 @media screen and (min-width:200px) {
   h1 {
@@ -38,7 +38,7 @@ h1, h2{
 @media screen and (min-width:960px) {
   h1 {
 		font-size:9.2vw;
-    background-color:  blue;
+    background-color:  gray;
     }
 }
 @media screen and (min-width:1024px) {
