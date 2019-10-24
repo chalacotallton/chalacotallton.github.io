@@ -47,7 +47,7 @@ main{
   margin: 0 auto;
   margin-top: 12%;
   background-image: url("../img/canvas.png");
-    background-size: 100% 100%;
+  background-size: 100% 100%;
   box-sizing: border-box;
   text-align: center;
   line-height: 350%;
@@ -130,5 +130,48 @@ main{
     box-sizing: border-box;
     text-align: center;
     line-height: 600%;
+  }
+}
+@media screen and (min-width:1360px) {
+  #ddmenu {
+      width:55%;
+      height: 6rem;
+      padding: 15px;
+      margin: 10px;
+      background-image: url("../img/canvas.png");
+      background-size: 100% 100%;
+      box-sizing: border-box;
+      float: right;
+      text-align: center;
+      line-height: 350%;
+  }
+  #logo {
+    width:40%;
+    height: 6rem;
+    padding: 15px;
+    margin: 10px;
+    background-image: url("../img/canvas.png");
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 600%;
+  }
+  #firstpage {
+    margin: 0 10%;
+    width: 80%;
+  }
+  #firstpage #welcome, #charm {
+    height:24%
+  }
+  #firstpage #description {
+    height:12%
+  }
+  #secondpage {
+    margin: 0 2%;
+    width: 46%
+  }
+  #thirdpage {
+    margin: 0 2%;
+    width: 46%
   }
 }
