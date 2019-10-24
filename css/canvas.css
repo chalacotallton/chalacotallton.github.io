@@ -32,6 +32,9 @@ main{
 }
 #navbar {
   display: none;
+}
+#mobilenavbar {
+  display: none;
   text-decoration: none;
   width: 50%;
   height: 80vh;
@@ -43,12 +46,8 @@ main{
   position: absolute;
   right: 0.5%;
   top: 0.5%;
-	transition: display 10s;
-	-webkit-transition: display 10s;
-	transition-timing-function: ease;
-	-webkit-transition-timing-function: ease;
 }
-#navbar a{
+#mobilenavbar a{
   display: block;
   text-align: right;
   padding: 10%;
@@ -154,6 +153,9 @@ main{
     box-sizing: border-box;
     text-align: center;
     line-height: 600%;
+  }
+  #mobilenavbar {
+    display: none;
   }
   #navbar {
     display: inline-block;

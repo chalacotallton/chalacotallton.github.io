@@ -1,3 +1,3 @@
-function navbar() {
-  $("#navbar").show();
+function mobilenavbar() {
+  $("#mobilenavbar").show();
 }

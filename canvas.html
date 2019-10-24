@@ -14,10 +14,15 @@
       <div id="logo">
         logo
       </div>
-      <div id="ddmenu" onclick="navbar()">
+      <div id="ddmenu" onclick="mobilenavbar()">
         ddmenu
       </div>
       <nav id="navbar">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </nav>
+      <nav id="mobilenavbar">
         <a href="#">Link 1</a>
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
@@ -70,8 +75,8 @@
         $("#resolution").text("Your resolution is " + ($(document).width()+17) + " x " + $(window).height());
       });
       $(document).click(function(e) {
-        if(e.target.id != "navbar" && e.target.id != "ddmenu") {
-          $("#navbar").hide(600);
+        if(e.target.id != "mobilenavbar" && e.target.id != "ddmenu") {
+          $("#mobilenavbar").hide(600);
         }
       });
     </script>
