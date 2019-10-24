@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Styled Navigation</title>
+    <link rel="stylesheet" href="cwmw2.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="">Home</a>
+      <a href="">Photos</a>
+      <a href="">Recipes</a>
+      <a href="">Contact</a>
+    </nav>
+    <section>
+      <h2>Playing with Vertical Navigation Bars</h2>
+
+      <p>This is a separate section that will hold the content for each page.  The next paragraph is just filler text. It doesn't mean anything.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, temporibus, culpa! Impedit amet voluptates reiciendis esse quisquam. Eum quia, facere laboriosam quos possimus, ratione, optio incidunt sunt dolorum commodi magni.</p>
+
+        <p id="resolution">
+        </p>
+    </section>
+
+    <script>
+      $("#resolution").text("Your resolution is " + ($(document).width()+17) + " x " + $(window).height());
+      $(window).resize(function() {
+        $("#resolution").text("Your resolution is " + ($(document).width()+17) + " x " + $(window).height());
+      });
+    </script>
+  </body>
+</html>
