@@ -30,7 +30,29 @@ main{
     line-height: 400%;
     cursor: pointer;
 }
-
+#navbar {
+  display: none;
+  text-decoration: none;
+  width: 50%;
+  height: 80vh;
+  float: right;
+  box-sizing: border-box;
+  padding-left: 10;
+  background-color: rgba(82,82,82,0.5);
+  z-index: 1;
+  position: absolute;
+  right: 0.5%;
+  top: 0.5%;
+	transition: display 10s;
+	-webkit-transition: display 10s;
+	transition-timing-function: ease;
+	-webkit-transition-timing-function: ease;
+}
+#navbar a{
+  display: block;
+  text-align: right;
+  padding: 10%;
+}
 #firstpage {
   width: 100%;
   height: 94vmax;
@@ -120,6 +142,7 @@ main{
       float: right;
       text-align: center;
       line-height: 350%;
+      display: none;
   }
   #logo {
     width:40%;
@@ -131,6 +154,22 @@ main{
     box-sizing: border-box;
     text-align: center;
     line-height: 600%;
+  }
+  #navbar {
+    display: inline-block;
+    float: right;
+    width:55%;
+    height: 6rem;
+    padding: 15px;
+    margin: 10px;
+    background-image: url("../img/canvas.png");
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 300%
+  }
+  #navbar a{
+    display: inline;
   }
   #firstpage {
     margin: 0 5%;

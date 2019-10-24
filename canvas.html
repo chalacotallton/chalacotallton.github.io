@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/canvas.css">
+    <script src="js/js.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
@@ -13,9 +14,14 @@
       <div id="logo">
         logo
       </div>
-      <div id="ddmenu">
+      <div id="ddmenu" onclick="navbar()">
         ddmenu
       </div>
+      <nav id="navbar">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </nav>
     </header>
     <main>
       <section id="firstpage">
@@ -62,6 +68,11 @@
       $("#resolution").text("Your resolution is " + ($(document).width()+17) + " x " + $(window).height());
       $(window).resize(function() {
         $("#resolution").text("Your resolution is " + ($(document).width()+17) + " x " + $(window).height());
+      });
+      $(document).click(function(e) {
+        if(e.target.id != "navbar" && e.target.id != "ddmenu") {
+          $("#navbar").hide(600);
+        }
       });
     </script>
   </body>
