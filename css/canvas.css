@@ -72,8 +72,8 @@ header > div {
   line-height: 350%;
 }
 #wpp {
-  width:80px;
-  height:80px;
+  width:6em;
+  height:6em;
   position: fixed;
   right: 0.1%;
   bottom: 4%
