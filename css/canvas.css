@@ -5,18 +5,17 @@ main{
 }
 #logo {
   width:60%;
-  height: 15%;
+  height: 12%;
   padding: 15px;
   margin: 10px;
   background-image: url("../img/canvas.png");
   background-size: 100% 100%;
   box-sizing: border-box;
-  text-align: center;
-  line-height: 600%;
+  line-height: 400%;
 }
 #ddmenu {
     width:6em;
-    height: 6rem;
+    height: 12%;
     padding: 15px;
     margin: 10px;
     background-image: url("../img/canvas.png");
@@ -25,7 +24,7 @@ main{
     float: right;
     text-align: center;
     vertical-align: center;
-    line-height: 350%;
+    line-height: 400%;
 }
 #firstpage {
   width:100%;
@@ -103,4 +102,29 @@ main{
 #wpp img {
   max-width: 100%;
     max-height: 100%;
+}
+@media screen and (min-width:1024px) {
+  #ddmenu {
+      width:55%;
+      height: 6rem;
+      padding: 15px;
+      margin: 10px;
+      background-image: url("../img/canvas.png");
+      background-size: 100% 100%;
+      box-sizing: border-box;
+      float: right;
+      text-align: center;
+      line-height: 350%;
+  }
+  #logo {
+    width:40%;
+    height: 6rem;
+    padding: 15px;
+    margin: 10px;
+    background-image: url("../img/canvas.png");
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 600%;
+  }
 }
