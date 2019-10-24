@@ -74,11 +74,7 @@
       $(window).resize(function() {
         $("#resolution").text("Your resolution is " + ($(document).width()+17) + " x " + $(window).height());
       });
-      $(document).click(function(e) {
-        if(e.target.id != "mobilenavbar" && e.target.id != "ddmenu") {
-          $("#mobilenavbar").hide(600);
-        }
-      });
+      $(document).ready(outsideclick());
     </script>
   </body>
 </html>
