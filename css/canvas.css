@@ -2,6 +2,7 @@ header > div {
   display: inline-block;
 }
 main{
+  height: auto;
 }
 #logo {
   width:60%;
@@ -31,8 +32,8 @@ main{
 }
 
 #firstpage {
-  width:100%;
-  height: 84vh;
+  width: 100%;
+  height: 94vmax;
   background-image: url("../img/canvas.png");
   background-size: 100% 100%;
   box-sizing: border-box;
@@ -40,7 +41,7 @@ main{
   text-align: center;
   vertical-align: center;
 }
-#welcome {
+.welcome {
   width:80%;
   height: 30%;
   padding: 15px;
@@ -52,7 +53,7 @@ main{
   text-align: center;
   line-height: 350%;
 }
-#description {
+.description {
   width:80%;
   height: 15%;
   padding: 15px;
@@ -64,7 +65,7 @@ main{
   text-align: center;
   line-height: 350%;
 }
-#charm{
+.charm{
   width:80%;
   height: 30%;
   padding: 15px;
@@ -78,7 +79,7 @@ main{
 }
 #secondpage {
   width:100%;
-  height: 84vh;
+  height: 100%;
   background-image: url("../img/canvas.png");
   background-size: 100% 100%;
   box-sizing: border-box;
@@ -88,7 +89,7 @@ main{
 }
 #thirdpage {
   width:100%;
-  height: 84vh;
+  height: 100%;
   background-image: url("../img/canvas.png");
   background-size: 100% 100%;
   box-sizing: border-box;
@@ -135,10 +136,10 @@ main{
     margin: 0 5%;
     width: 90%;
   }
-  #firstpage #welcome, #charm {
+  #firstpage .welcome, .charm {
     height:24%
   }
-  #firstpage #description {
+  #firstpage .description {
     height:12%
   }
   #secondpage {
@@ -178,10 +179,10 @@ main{
     margin: 0 10%;
     width: 80%;
   }
-  #firstpage #welcome, #charm {
+  #firstpage .welcome, .charm {
     height:24%
   }
-  #firstpage #description {
+  #firstpage .description {
     height:12%
   }
   #secondpage {
