@@ -82,7 +82,7 @@ main{
   background-image: url("../img/canvas.png");
   background-size: 100% 100%;
   box-sizing: border-box;
-  float: right;
+  float: left;
   text-align: center;
   vertical-align: center;
 }
@@ -130,6 +130,24 @@ main{
     box-sizing: border-box;
     text-align: center;
     line-height: 600%;
+  }
+  #firstpage {
+    margin: 0 5%;
+    width: 90%;
+  }
+  #firstpage #welcome, #charm {
+    height:24%
+  }
+  #firstpage #description {
+    height:12%
+  }
+  #secondpage {
+    margin: 0 5%;
+    width: 90%;
+  }
+  #thirdpage {
+    margin: 0 5%;
+    width: 90%;
   }
 }
 @media screen and (min-width:1360px) {
