@@ -90,7 +90,7 @@
 .overflow-hidden { overflow: hidden; }
 
 #ddmenu {
-  border: 1px solid #999;
+  /* border: 1px solid #999; */
   cursor: pointer;
   color: #999 !important;
 }
@@ -99,6 +99,6 @@
   position: fixed;
   top: 0%;
   right: 0;
-   display: none;
-  background-color: rgba(82,82,82,0.1);
+  /* display: none;  */
+  background-color: rgba(37,37,41,1);
 }
