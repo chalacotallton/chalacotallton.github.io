@@ -88,3 +88,17 @@
 }
 
 .overflow-hidden { overflow: hidden; }
+
+#ddmenu {
+  border: 1px solid #999;
+  cursor: pointer;
+  color: #999 !important;
+}
+#mobilenavbar {
+  z-index: 1050;
+  position: fixed;
+  top: 0%;
+  right: 0;
+   display: none;
+  background-color: rgba(82,82,82,0.1);
+}
