@@ -89,7 +89,7 @@
 #mobilenavbar {
   z-index: 1050;
   position: fixed;
-  top: 0%;
+  top: 0px;
   right: 0;
   background-color: rgba(37,37,41,1);
 }
@@ -114,5 +114,10 @@ hr {
 @media screen and (min-width:992px) and (max-width:1199px) {
   .img-fluid {
     width:100% !important;
+  }
+}
+@media screen and (max-width:767px) {
+  #logo {
+    position:fixed;
   }
 }
