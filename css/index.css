@@ -114,7 +114,7 @@
   #logo {
     position:fixed;
   }
-  #welcomehome {
+  /* #welcomehome {  
     height: calc(100vh - 48px);
-  }
+  } */
 }
