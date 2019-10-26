@@ -13,11 +13,6 @@
   }
 }
 
-
-.container {
-  max-width: 960px;
-}
-
 /*
  * Custom translucent site header
  */
@@ -40,16 +35,14 @@
  * Dummy devices (replace them with your own or something else entirely!)
  */
 
-.product-device {
-  position: absolute;
+/* .product-device {
+  position: relative;
   right: 10%;
   bottom: -30%;
-  width: 300px;
-  height: 540px;
+  width: 7%;
+  height: 15%;
   background-color: #333;
-  border-radius: 21px;
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
+  border-radius: 8px;
 }
 
 .product-device::before {
@@ -60,16 +53,16 @@
   left: 10px;
   content: "";
   background-color: rgba(255, 255, 255, .1);
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .product-device-2 {
-  top: -25%;
+  top: -5%;
   right: auto;
   bottom: 0;
   left: 5%;
   background-color: #e5e5e5;
-}
+} */
 
 
 /*
@@ -90,7 +83,6 @@
 .overflow-hidden { overflow: hidden; }
 
 #ddmenu {
-  /* border: 1px solid #999; */
   cursor: pointer;
   color: #999 !important;
 }
@@ -99,6 +91,28 @@
   position: fixed;
   top: 0%;
   right: 0;
-  /* display: none;  */
   background-color: rgba(37,37,41,1);
+}
+@media screen and (min-width:768px) {
+	h1 {
+		font-size:4rem !important;
+    }
+}
+@media screen and (min-width:992px) {
+	h1 {
+		font-size:4.5rem !important;
+    }
+}
+@media screen and (min-width:1200px) {
+	h1 {
+		font-size:5rem !important;
+    }
+}
+hr {
+  /* width:50% !important; */
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .img-fluid {
+    width:100% !important;
+  }
 }
