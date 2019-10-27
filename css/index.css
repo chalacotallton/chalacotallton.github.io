@@ -112,9 +112,9 @@
 }
 @media screen and (max-width:767px) {
   #logo {
-    position:fixed;
+    /* position:fixed; */
   }
-  /* #welcomehome {  
+  /* #welcomehome {
     height: calc(100vh - 48px);
   } */
 }
