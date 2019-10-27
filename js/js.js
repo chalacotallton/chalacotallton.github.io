@@ -15,5 +15,5 @@ $(document).ready(function(){
 })
 $(document).ready(function(){
   var logo_width = $("#logo").width();
-  $("#logo").css("left", "calc(50% - logo_width/2)")};
+  $("#logo").css("left", "calc(50% - logo_width/2)");
 })
