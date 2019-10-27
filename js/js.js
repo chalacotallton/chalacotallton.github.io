@@ -1,17 +1,19 @@
   $(document).click(function(e) {
-    console.log(e.target.id);
     if(e.target.id != "mobilenavbarContent" && e.target.id != "ddmenu") {
       $("#mobilenavbar").hide();
       $("#ddmenu").text("|||");
       $("#ddmenuClose").hide();
-      console.log(e.target.id);
     }
     if(e.target.id == "ddmenu") {
       $("#mobilenavbar").show();
-       $("#ddmenu").html("&nbsp");
+       // $("#ddmenu").html("&nbsp");
       $("#ddmenuClose").show();
     }
   })
 $(document).ready(function(){
   console.log("ready");
+})
+$(document).ready(function(){
+  var logo_width = $("#logo").width();
+  $("#logo").css("left", "calc(50% - logo_width/2)");
 })
