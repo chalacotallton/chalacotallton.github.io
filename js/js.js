@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var logo_width = $("#logo").width();
+  var logo_width = $("#navbar").width()/2-$("#logo").width()/2;
   $("#logo").css("left", logo_width);
   console.log("ok");
 })
