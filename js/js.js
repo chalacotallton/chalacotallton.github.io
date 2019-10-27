@@ -1,3 +1,8 @@
+$(document).ready(function(){
+  var logo_width = $("#logo").width();
+  $("#logo").css("left", logo_width);
+  console.log("ok");
+})
   $(document).click(function(e) {
     if(e.target.id != "mobilenavbarContent" && e.target.id != "ddmenu") {
       $("#mobilenavbar").hide();
@@ -12,8 +17,4 @@
   })
 $(document).ready(function(){
   console.log("ready");
-})
-$(document).ready(function(){
-  var logo_width = $("#logo").width();
-  $("#logo").css("left", "calc(50% - logo_width/2)");
 })

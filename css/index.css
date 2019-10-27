@@ -111,9 +111,9 @@
   }
 }
 @media screen and (max-width:767px) {
-  #logo {
-    /* left: calc(50% - 35.719px); */
-  }
+  /* #logo {
+     left: calc(50% - 35.719px);
+  } */
   /* #welcomehome {
     height: calc(100vh - 48px);
   } */
