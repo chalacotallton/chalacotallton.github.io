@@ -90,25 +90,105 @@
   right: 0;
   background-color: rgba(37,37,41,1);
 }
+/* #carrosselCap {
+  background-color: #343a40!important;
+} */
 @media screen and (min-width:768px) {
 	h1 {
 		font-size:4rem !important;
     }
+
 }
 @media screen and (min-width:992px) {
-	h1 {
+	/* h1 {
 		font-size:4.5rem !important;
-    }
+    } */
 }
 @media screen and (min-width:1200px) {
-	h1 {
+	/* h1 {
 		font-size:5rem !important;
-    }
+    } */
 }
 @media screen and (min-width:992px) and (max-width:1199px) {
   .img-fluid {
     width:100% !important;
   }
 }
-@media screen and (min-width:768px) {
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  #layoutCarrossel {
+    width: 100%;
+    max-height: 270px !important;
+  }
+  .carousel-inner{
+    width:100%;
+    max-height: 270px !important;
+}
+  .fit-image {
+  width: 100%;
+  object-fit: cover;
+  }
+  .fit-image {
+    max-height: 270px !important;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #layoutCarrossel {
+    width: 100%;
+    max-height: 431px !important;
+  }
+  .carousel-inner{
+  width:100%;
+  max-height: 431px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #layoutCarrossel {
+    max-height: 558px !important;
+  }
+  .carousel-inner{
+  width:100%;
+  max-height: 558px !important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #layoutCarrossel {
+    max-height: 675px !important;
+  }
+  .carousel-inner{
+  width:100%;
+  max-height: 675px !important;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1359px) {
+  main {
+    width:90%;
+    margin: 0 auto;
+  }
+  #layoutCarrossel {
+    max-height: 765px !important;
+  }
+  .carousel-item {
+    object-fit:fill;
+    max-height:765px !important;
+  }
+  .carousel-inner{
+  width:100%;
+  max-height: 765px !important;
+  }
+}
+@media only screen and (min-width: 1360px) {
+  main {
+    width:84%;
+    margin: 0 auto;
+  }
+  .carousel-item {
+    /* object-fit:fill; */
+  }
+  .carousel-inner{
+  width:100%;
+  }
 }

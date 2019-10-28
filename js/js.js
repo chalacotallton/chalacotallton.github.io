@@ -12,5 +12,5 @@ $(document).ready(function() {
 })
 
 $(document).ready(function(){
-  console.log("ready");
+  console.log($(window).width());
 })
