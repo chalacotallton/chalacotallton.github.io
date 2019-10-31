@@ -22,11 +22,6 @@ html {
   user-select: none;
 }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
 
 .site-header {
   background-color: rgba(0, 0, 0, .85);
@@ -50,6 +45,9 @@ html {
   .flex-md-equal > * {
     -ms-flex: 1;
     flex: 1;
+  }
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
   }
 }
 

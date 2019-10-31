@@ -6,13 +6,6 @@
   -ms-user-select: none;
   user-select: none;
 }
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
 /*
  * Custom translucent site header
  */
@@ -75,6 +68,9 @@
     -ms-flex: 1;
     flex: 1;
   }
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
 }
 
 .overflow-hidden { overflow: hidden; }
@@ -95,7 +91,6 @@
 	h1 {
 		font-size:4rem !important;
     }
-
 }
 @media screen and (min-width:992px) {
 
