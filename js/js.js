@@ -7,14 +7,14 @@ $(document).ready(function() {
 $(document).click(function(e) {
   if(e.target.id == "ddmenu") {
     if($("#ddmenu").text() == "X") {
-      setTimeout(function closeddmenu() {
-        $("#ddmenu").css({'transform' : 'rotate(90deg)'});
-        $("#ddmenu").text("|||");
-      }, 510);
+      $("#ddmenu").html("&equiv;");
+      $("#ddmenu").css("font-size", "28px");
+      $("#ddmenu").removeClass("py-2");
     }
     else {
-      $("#ddmenu").css({'transform' : 'rotate(0deg)'});
+      $("#ddmenu").css("font-size", "20px");
       $("#ddmenu").text("X");
+      $("#ddmenu").addClass("py-2");
     }
   }
 })
