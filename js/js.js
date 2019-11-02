@@ -7,9 +7,13 @@ $(document).ready(function() {
 $(document).click(function(e) {
   if(e.target.id == "ddmenu") {
     if($("#ddmenu").text() == "X") {
-      $("#ddmenu").text("|||");
+      setTimeout(function closeddmenu() {
+        $("#ddmenu").css({'transform' : 'rotate(90deg)'});
+        $("#ddmenu").text("|||");
+      }, 510);
     }
     else {
+      $("#ddmenu").css({'transform' : 'rotate(0deg)'});
       $("#ddmenu").text("X");
     }
   }
