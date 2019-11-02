@@ -50,7 +50,7 @@
 .overflow-auto { overflow: auto; }
 #ddmenu {
   cursor: pointer;
-  color: #999 !important;
+  font-size: 28px;
 }
 #mobilenavbar {
   z-index: 1050;
