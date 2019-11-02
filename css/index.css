@@ -77,8 +77,15 @@
 .overflow-auto { overflow: auto; }
 #ddmenu {
   cursor: pointer;
-  color: #999 !important;
-  transform: rotate(90deg);
+  /* color: #999 !important; */
+  font-size: 28px
+}
+#ddmenuX {
+  cursor: pointer;
+  /* color: #999 !important; */
+}
+.hiddenByadm {
+  display: none !important;
 }
 #mobilenavbar {
   z-index: 1050;
