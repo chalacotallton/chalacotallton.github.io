@@ -78,6 +78,7 @@
 #ddmenu {
   cursor: pointer;
   color: #999 !important;
+  transform: rotate(90deg);
 }
 #mobilenavbar {
   z-index: 1050;
