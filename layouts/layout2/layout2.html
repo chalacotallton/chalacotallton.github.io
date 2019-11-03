@@ -21,9 +21,9 @@
 <body>
     <!-- building block -->
     <header class="header header-dark header-sticky">
-      <div class="container">
+      <div class="container fixed-top">
         <div class="row">
-          <nav class="navbar navbar-expand-md navbar-light d-flex justify-content-md-around w-100">
+          <nav class="navbar navbar-expand-md navbar-dark d-flex justify-content-between justify-content-md-around w-100 border-bottom">
             <a href="layout2.html" class="navbar-brand order-1 order-md-2">Logo</a>
             <button class="navbar-toggler order-2 collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse order-3 order-md-1" id="navbarMenu2">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="portal.html">Log In</a>
+                  <a class="nav-link text-white" href="portal.html">Log In</a>
                 </li>
                 <li class="nav-item">
                   <a data-toggle="modal" data-target="#search" class="nav-link"><i class="icon-search"></i></a>
@@ -44,18 +44,21 @@
             <div class="collapse navbar-collapse order-4 order-md-3" id="navbarMenu2">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="portal.html">Log In</a>
+                  <a class="nav-link text-white" href="portal.html">Log In</a>
                 </li>
                 <li class="nav-item">
                   <a data-toggle="modal" data-target="#search" class="nav-link"><i class="icon-search"></i></a>
                 </li>
                 <li class="nav-item cart">
-                  <a data-toggle="modal" data-target="#cart" class="nav-link"><span>Cart</span><span>2</span></a>
+                  <a data-toggle="modal" data-target="#cart" class="nav-link text-white"><span>Cart</span><span>2</span></a>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid mt-0 pt-0">
+          <img id="jumbotron" class="img-fluid "src="img/background-1.jpg" alt="background">
       </div>
     </header>
     <!-- building block -->
