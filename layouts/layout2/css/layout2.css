@@ -43,12 +43,8 @@
   cursor: pointer;
   font-size: 28px;
 }
-#mobilenavbar {
-  z-index: 1050;
-  position: fixed;
-  top: 0px;
-  right: 0;
-  background-color: rgba(37,37,41,1);
+#navbar {
+  transition: top 0.5s;
 }
 
 @media screen and (min-width:768px) {

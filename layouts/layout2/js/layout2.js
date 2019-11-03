@@ -2,20 +2,20 @@
 $(document).ready(function(){
 console.log($(window).width());
 })
+//to top on ready
+$(document).ready(function(){
+    $(this).scrollTop(0);
+    var prevScrollpos = 0;
+    var currentScrollPos = 0;
+});
 // Navbar js
-$(document).ready(function() {
-$(document).click(function(e) {
-if(e.target.id == "ddmenu") {
-  if($("#ddmenu").text() == "X") {
-    $("#ddmenu").html("&equiv;");
-    $("#ddmenu").css("font-size", "28px");
-    $("#ddmenu").removeClass("py-2");
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-60px";
   }
-  else {
-    $("#ddmenu").css("font-size", "20px");
-    $("#ddmenu").text("X");
-    $("#ddmenu").addClass("py-2");
-  }
+  prevScrollpos = currentScrollPos;
 }
-})
-})
