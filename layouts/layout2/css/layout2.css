@@ -53,7 +53,9 @@
     background-color: rgba(128, 128, 128, 0.7) !important;
   }
 }
-
+.nav-item:hover {
+  font-weight: bold !important;
+}
 #logocenter {
   margin: 0 auto;
 }
@@ -66,15 +68,25 @@
 #navbar {
   transition: top 0.5s ease-in 0.5s;
 }
-
+.nav-link {
+  display: inline;
+}
+#colecoes {
+  opacity: 0.8;
+  background-color: #fff1e0;
+}
 @media screen and (min-width:768px) {
 	h1 {
 		font-size:4rem !important;
     }
-
+  #colecoes {
+    width: 500px;
+  }
 }
 @media screen and (min-width:992px) {
-
+  #colecoes {
+    width: 700px;
+  }
 }
 @media screen and (min-width:1200px) {
 
