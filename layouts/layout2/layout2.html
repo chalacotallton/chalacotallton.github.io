@@ -20,49 +20,56 @@
   </head>
 <body>
     <!-- building block -->
-    <header class="header header-dark header-sticky">
+    <header class="">
       <div class="container fixed-top">
-        <div class="row">
-          <nav id="navbar" class="navbar navbar-expand-md navbar-dark d-flex justify-content-between justify-content-md-around w-100 border-bottom">
-            <a href="layout2.html" class="navbar-brand order-1 order-md-2">Logo</a>
-            <button class="navbar-toggler order-2 collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <div id="navbar" class="text-white d-flex justify-content-between justify-content-md-around navbar navbar-expand-md navbar-dark border-bottom header-dark">
+          <div class="order-3 order-md-1 col-md-4 collapse navbar-collapse" id="navbarMenu1">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item mx-1 d-block">Home</li>
+              <li class="nav-item mx-1">Pages</li>
+              <li class="nav-item mx-1">Docs</li>
+              <li class="d-md-none disabled"><br></li>
+            </ul>
+          </div>
+          <div class="order-1 order-md-2">
+            <a id="logocenter" href="layout2.html" class="navbar-brand ">Logo</a>
+          </div>
+          <div class="order-5 order-md-3 col-md-4 collapse navbar-collapse" id="navbarMenu2">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mx-1"><span data-feather="log-in"></span><span>&nbsp;Entrar</span></li>
+              <li class="nav-item mx-1"><span data-feather="search"></span><span>&nbsp;Pesquisar</span></li>
+              <li class="nav-item mx-1"><span data-feather="shopping-cart"></span><span>&nbsp;Carrinho</span></li>
+            </ul>
+          </div>
+          <div class="order-2 d-inline-block d-md-none text-right ">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse order-3 order-md-1" id="navbarMenu2">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="portal.html">Log In</a>
-                </li>
-                <li class="nav-item">
-                  <a data-toggle="modal" data-target="#search" class="nav-link"><i class="icon-search"></i></a>
-                </li>
-                <li class="nav-item cart">
-                  <a data-toggle="modal" data-target="#cart" class="nav-link"><span>Cart</span><span>2</span></a>
-                </li>
-              </ul>
-            </div>
-            <div class="collapse navbar-collapse order-4 order-md-3" id="navbarMenu2">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="portal.html">Log In</a>
-                </li>
-                <li class="nav-item">
-                  <a data-toggle="modal" data-target="#search" class="nav-link"><i class="icon-search"></i></a>
-                </li>
-                <li class="nav-item cart">
-                  <a data-toggle="modal" data-target="#cart" class="nav-link text-white"><span>Cart</span><span>2</span></a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          </div>
         </div>
       </div>
+
       <div class="jumbotron jumbotron-fluid mt-0 pt-0">
           <img id="jumbotron" class="img-fluid "src="img/background-1.jpg" alt="background">
       </div>
     </header>
     <!-- building block -->
 <main>
+  <div class="text-center">
+    <p>texto</p>
+  </div>
+  <div class="text-center">
+    <p>texto</p>
+  </div>
+  <div class="text-center">
+    <p>texto</p>
+  </div>
+  <div class="text-center">
+    <p>texto</p>
+  </div>
+  <div class="text-center">
+    <p>texto</p>
+  </div>
   <div class="text-center">
     <p>texto</p>
   </div>
@@ -116,5 +123,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Icons -->
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
 </body>
 </html>
