@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Layout 2 - Vestuário</title>
+    <meta name="application-name" content="Meu Site">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#212529">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Meu Site">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/layout2.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="css/layout2.css" rel="stylesheet">
+  </head>
+<body>
+    <!-- building block -->
+    <header class="">
+      <div class="container fixed-top pr-0 pt-0 pb-0">
+        <div id="navbar" class="text-white d-flex justify-content-between  navbar navbar-expand-md navbar-dark border-bottom header-dark">
+          <div class="order-3 order-md-1 col-md-4 collapse navbar-collapse" id="navbarMenu1">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item mx-1 d-block">Roupas</li>
+              <li class="nav-item mx-1">Calçados</li>
+              <li class="nav-item mx-1">Sale <span class="d-none d-xl-inline" data-feather="gift"></li>
+              <li class="nav-item dropdown megamenu show">
+                <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown-colecao" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Coleções
+                </a>
+                <div id="colecoes" class="dropdown-menu hide my-3 py-0 border-0 text-white" aria-labelledby="navbarDropdown-colecao">
+                  <div class="row d-flex flex-row">
+                    <div>
+                      <ul>
+                        <li><span class="megamenu-title">Home</span></li>
+                        <li><a class="dropdown-item" href="index.html">Home - classic</a></li>
+                        <li><a class="dropdown-item" href="index-carousel.html">Home - carousel</a></li>
+                        <li><a class="dropdown-item" href="index-categories.html">Home - categories</a></li>
+                        <li><a class="dropdown-item" href="index-modern.html">Home - modern</a></li>
+                        <li><a class="dropdown-item" href="index-minimal.html">Home - minimal</a></li>
+                        <li><span class="megamenu-title">Shop</span></li>
+                        <li><a class="dropdown-item" href="listing-sidebar.html">Listing - sidebar</a></li>
+                        <li><a class="dropdown-item" href="listing-full.html">Listing - full width</a></li>
+                        <li><a class="dropdown-item" href="listing-masonry.html">Listing - masonry</a></li>
+                        <li><a class="dropdown-item" href="listing-modern.html">Listing - modern</a></li>
+                      </ul>
+                    </div>
+                    <div style="max-width: 275px">
+                      <ul>
+                        <li><span class="megamenu-title">Home</span></li>
+                        <li><a class="dropdown-item" href="index.html">Home - classic</a></li>
+                        <li><a class="dropdown-item" href="index-carousel.html">Home - carousel</a></li>
+                        <li><a class="dropdown-item" href="index-categories.html">Home - categories</a></li>
+                        <li><a class="dropdown-item" href="index-modern.html">Home - modern</a></li>
+                        <li><a class="dropdown-item" href="index-minimal.html">Home - minimal</a></li>
+                        <li><span class="megamenu-title">Shop</span></li>
+                        <li><a class="dropdown-item" href="listing-sidebar.html">Listing - sidebar</a></li>
+                        <li><a class="dropdown-item" href="listing-full.html">Listing - full width</a></li>
+                        <li><a class="dropdown-item" href="listing-masonry.html">Listing - masonry</a></li>
+                        <li><a class="dropdown-item" href="listing-modern.html">Listing - modern</a></li>
+                      </ul>
+                    </div>
+                    <div class="d-none d-lg-inline-block">
+                      <img class="d-none d-md-inline-block mx-0" src="img/colecao.jpg" alt="coleções" style="max-width: 275px">
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="order-1 order-md-2">
+            <a id="logocenter" href="layout2.html" class="navbar-brand ">Logo</a>
+          </div>
+          <div class="order-4 order-md-3 col-md-4 collapse navbar-collapse" id="navbarMenu2">
+            <ul class="navbar-nav ml-auto">
+              <li class="d-inline d-md-none"><br></li>
+              <li class="nav-item mx-1"><span data-feather="log-in"></span><span>&nbsp;Entrar</span></li>
+              <li class="nav-item mx-1"><span data-feather="search"></span><span class="d-none d-lg-inline">&nbsp;Pesquisar</span></li>
+              <li class="nav-item mx-1"><span data-feather="shopping-cart"></span><span>&nbsp;Carrinho</span></li>
+            </ul>
+          </div>
+          <div class="order-2 d-inline-block d-md-none text-right ">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron jumbotron-fluid mt-0 pt-0" style="position:relative;">
+          <img id="jumbotron" class="img-fluid "src="img/background-1.jpg" alt="background">
+      </div>
+    </header>
+    <!-- building block -->
+<main>
+  <div class="text-center">
+    <p>texto</p>
+  </div>
+  <div class="text-center">
+    <p>texto</p>
+  </div>
+  <div class="text-center">
+    <p>texto</p>
+  </div>
+  <div class="text-center">
+    <p>texto</p>
+  </div>
+  <div class="text-center">
+    <p>texto</p>
+  </div>
+  <div class="text-center">
+    <p>texto</p>
+  </div>
+</main>
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+    LOGO
+      <small class="d-block mb-3 text-muted">&copy; 2019</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Cool stuff</a></li>
+        <li><a class="text-muted" href="#">Random feature</a></li>
+        <li><a class="text-muted" href="#">Team feature</a></li>
+        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+        <li><a class="text-muted" href="#">Another one</a></li>
+        <li><a class="text-muted" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Resource</a></li>
+        <li><a class="text-muted" href="#">Resource name</a></li>
+        <li><a class="text-muted" href="#">Another resource</a></li>
+        <li><a class="text-muted" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Business</a></li>
+        <li><a class="text-muted" href="#">Education</a></li>
+        <li><a class="text-muted" href="#">Government</a></li>
+        <li><a class="text-muted" href="#">Gaming</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Icons -->
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+</body>
+</html>
