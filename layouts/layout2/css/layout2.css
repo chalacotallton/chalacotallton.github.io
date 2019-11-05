@@ -79,28 +79,26 @@
 .card-body {
   min-height: 300px;
   min-width: 300px;
+  max-height: 533px;
   margin-right: 5px; /*do not add any left margin, else js will be broken*/
   box-sizing: border-box;
 }
-.testdeck {
-  background-color: blue !important;
+.vitrine-control-next-icon {
+  height: 100px;
+   width: 100px;
+   background-size: 100%, 100%;
+   background-image: none;
+   cursor: pointer;
+   position: absolute;
+   top: 150px;
+   right: 0px;
+   text-shadow: 2px 2px 20px black, 2px 2px 20px black, 2px 2px 20px black, 2px 2px 20px black;
 }
-.vitrine-item, .card, .card-body, #vitrine, .vitrine {
-  transition: left 5.5s ease-in 5.5s;
-}
-.carousel-control-prev-icon {
-    filter: invert(100%);
-    position:relative;
-    top:-150px;
-    cursor: pointer;
-}
-.carousel-control-next-icon {
-  filter: invert(100%);
-  position:relative;
-  top:-150px;
-  right:0px;
-  float: right;
-  cursor: pointer;
+.vitrine-control-next-icon:after {
+  content: '>';
+  font-size: 55px;
+  color: silver;
+
 }
 /*Media based criteria */
 @media screen and (min-width:768px) {

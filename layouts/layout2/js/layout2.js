@@ -38,7 +38,7 @@ $(document).ready(function(){
 //vitrine controls
 
 $(document).ready(function(){
-  $(".carousel-control-next-icon").click(function() {
+  $(".vitrine-control-next-icon").click(function() {
     var x = document.getElementsByClassName("vitrine-item");
     for(var i = 1; i <= x.length; i++) {
       $('.vitrine-item.order-' + i).addClass('order-' + (i - 1));
@@ -51,15 +51,3 @@ $(document).ready(function(){
     console.log(indice);
   })
 })
-
-
-// on resize recalculate x[0] position
-$(document).ready(function(){
-    $(window).resize(function() {
-      console.log("resized");
-      var x = document.getElementsByClassName("vitrine-item");
-      for(var i = 0; i < x.length; i++) {
-          $(x[i]).css("left", "");
-      }
-    })
-});
