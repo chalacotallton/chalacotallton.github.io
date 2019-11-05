@@ -79,7 +79,22 @@
 .card-body {
   min-height: 300px;
   min-width: 300px;
-  margin-right: 5px;
+  margin-right: 5px; /*do not add any left margin, else js will be broken*/
+  box-sizing: border-box;
+}
+.carousel-control-prev-icon {
+    filter: invert(100%);
+    position:relative;
+    top:-150px;
+    cursor: pointer;
+}
+.carousel-control-next-icon {
+  filter: invert(100%);
+  position:relative;
+  top:-150px;
+  right:0px;
+  float: right;
+  cursor: pointer;
 }
 /*Media based criteria */
 @media screen and (min-width:768px) {
