@@ -33,6 +33,7 @@
   -ms-flex: 1;
   flex: 1;
 }
+
 @media (min-width: 768px) {
   .flex-md-equal > * {
     -ms-flex: 1;
@@ -75,6 +76,12 @@
   opacity: 0.8;
   background-color: #fff1e0;
 }
+.card-body {
+  min-height: 300px;
+  min-width: 300px;
+  margin-right: 5px;
+}
+/*Media based criteria */
 @media screen and (min-width:768px) {
 	h1 {
 		font-size:4rem !important;

@@ -9,7 +9,6 @@ $(document).ready(function(){
 });
 // Navbar js
 var prevScrollpos = window.pageYOffset;
-console.log(prevScrollpos);
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -18,6 +17,12 @@ window.onscroll = function() {
 
     document.getElementById("navbar").style.top = "-50px";
   }
-  console.log(currentScrollPos);
   prevScrollpos = currentScrollPos;
 }
+
+//vitrine
+$(document).ready(function(){
+  console.log($("#vitrine").width());
+  var d = document.getElementById("vitrine");
+  d.style.left = "-300px";
+});
