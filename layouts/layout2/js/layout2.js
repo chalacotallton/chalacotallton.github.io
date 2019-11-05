@@ -37,15 +37,21 @@ $(document).ready(function(){
 });
 //vitrine controls
 
-// $(document).ready(function(){
-//   var x = document.getElementsByClassName("vitrine-item");
-//   var distance = 0;
-//   for(var i = 1; i < x.length; i++) {
-//     x[i].style.left = -$(x[i]).outerWidth() - parseInt($(x[i]).css('marginRight')) + "px";
-//     distance += -$(x[i]).outerWidth() - parseInt($(x[i]).css('marginRight'));
-//   }
-//   x[0].style.left = -distance + "px";
-// })
+$(document).ready(function(){
+  $(".carousel-control-next-icon").click(function() {
+    var x = document.getElementsByClassName("vitrine-item");
+    for(var i = 1; i <= x.length; i++) {
+      $('.vitrine-item.order-' + i).addClass('order-' + (i - 1));
+      $('.vitrine-item.order-' + i).removeClass('order-' + i);
+      console.log(i);
+    }
+      var indice = parseInt(x.length);
+      $('.vitrine-item.order-0').addClass('order-' + indice);
+      $('.vitrine-item.order-0').removeClass('order-0');
+    console.log(indice);
+  })
+})
+
 
 // on resize recalculate x[0] position
 $(document).ready(function(){

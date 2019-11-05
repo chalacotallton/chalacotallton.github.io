@@ -82,6 +82,12 @@
   margin-right: 5px; /*do not add any left margin, else js will be broken*/
   box-sizing: border-box;
 }
+.testdeck {
+  background-color: blue !important;
+}
+.vitrine-item, .card, .card-body, #vitrine, .vitrine {
+  transition: left 5.5s ease-in 5.5s;
+}
 .carousel-control-prev-icon {
     filter: invert(100%);
     position:relative;
