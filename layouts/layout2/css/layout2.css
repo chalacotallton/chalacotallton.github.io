@@ -113,6 +113,14 @@
 .categoria {
     max-height: 540px;
     margin: 0 auto;
+    min-height: 300px;
+        cursor: pointer;
+}
+.category-text-right, .category-text-left {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-variant: small-caps;
 }
 /*Media based criteria */
 @media screen and (min-width:768px) {
@@ -122,14 +130,49 @@
   #colecoes {
     width: 500px;
   }
+  .category-text-right {
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-variant: small-caps;
+  }
+  .category-text-left {
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-variant: small-caps;
+  }
 }
 @media screen and (min-width:992px) {
   #colecoes {
     width: 700px;
   }
+  .category-text-right {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+    font-variant: small-caps;
+  }
+  .category-text-left {
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 600;
+    font-variant: small-caps;
+  }
 }
 @media screen and (min-width:1200px) {
-
+  .category-text-right {
+    text-align: left;
+    font-size: 2.3rem;
+    font-weight: 600;
+    font-variant: small-caps;
+  }
+  .category-text-left {
+    text-align: right;
+    font-size: 2.3rem;
+    font-weight: 600;
+    font-variant: small-caps;
+  }
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
