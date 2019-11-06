@@ -20,21 +20,6 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-//vitrine
-$(document).ready(function(){
-  var x = document.getElementsByClassName("vitrine-item");
-  var vitrineItemLength = 0;
-  for (var i = 0 ; i < x.length; i++) {
-    vitrineItemLength += $(x[i]).outerWidth();
-  }
-  if (vitrineItemLength > $(".vitrine").outerWidth()) {
-    console.log("flag on");
-  }
-  else {
-    console.log($(".vitrine").outerWidth()+" flag off");
-  }
-
-});
 //vitrine controls
 
 $(document).ready(function(){

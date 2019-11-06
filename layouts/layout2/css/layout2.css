@@ -81,6 +81,7 @@
   max-height: 533px;
   margin-right: 5px;
   box-sizing: border-box;
+  padding-top: 3px !important;
 }
 .vitrine-control-next-icon {
   height: 100px;
@@ -89,7 +90,7 @@
    background-image: none;
    cursor: pointer;
    position: absolute;
-   top: 150px;
+   top: 120px;
    right: 0px;
    text-shadow: 2px 2px 20px black, 2px 2px 20px black, 2px 2px 20px black, 2px 2px 20px black;
 }
@@ -98,16 +99,20 @@
   font-size: 55px;
   color: silver;
 }
-.vitrineCheckout {
+
+.vitrineMiniInfo { /*representa o texto embaixo de cada item da vitrine*/
   width: 100%;
-  height: 25px;
+  height: 45px;
   position: absolute;
   bottom: 0px;
-  border-top: 1px solid black;
+  border-top: 1px solid silver;
   text-align: center;
   box-sizing: border-box;
   clear: both;
   left: 0px;
+  z-index: 1;
+  background-color: white;
+  text-align: left;
 }
 .categoria {
     max-height: 540px;
@@ -125,13 +130,11 @@
   height: 240px;
   width: 240px;
   box-sizing: border-box;
-  border: 1px solid black;
 }
 .sales-pic {
   height: 488px;
   width: 240px;
   box-sizing: border-box;
-  border: 1px solid black;
 }
 #salesdisplay {
   height: 504px;
@@ -206,6 +209,14 @@
     width: 140px;
     box-sizing: border-box;
     border: 1px solid black;
+  }
+  .card-body {
+    min-height: 280px;
+    min-width: 280px;
+    max-height: 497;
+    margin-right: 4px;
+    box-sizing: border-box;
+    padding-top: 3px !important;
   }
 }
 @media screen and (max-width:327px) {
