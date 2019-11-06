@@ -1,3 +1,4 @@
+
 /*
  * Custom translucent site header
  */
@@ -43,12 +44,10 @@
 @media (max-width: 767px) {
   .header-dark {
     background-color: rgba(16, 16, 16, 0.65) !important;
-    width: 100%;
+     width: 100%;
   }
   .container {
-    max-width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+     max-width: 100% !important;
   }
   .nav-item:hover {
     background-color: rgba(128, 128, 128, 0.7) !important;
@@ -118,9 +117,24 @@
 }
 .category-text-right, .category-text-left {
   text-align: right;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   font-variant: small-caps;
+}
+.sales-card {
+  height: 240px;
+  width: 240px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.sales-pic {
+  height: 488px;
+  width: 240px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+#salesdisplay {
+  height: 504px;
 }
 /*Media based criteria */
 @media screen and (min-width:768px) {
@@ -149,13 +163,13 @@
   }
   .category-text-right {
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
     font-variant: small-caps;
   }
   .category-text-left {
     text-align: right;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
     font-variant: small-caps;
   }
@@ -163,16 +177,47 @@
 @media screen and (min-width:1200px) {
   .category-text-right {
     text-align: left;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 600;
     font-variant: small-caps;
   }
   .category-text-left {
     text-align: right;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 600;
     font-variant: small-caps;
   }
+}
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (max-width:575px) {
+  .sales-card {
+    height: 160px;
+    width: 160px;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+}
+@media screen and (max-width:369px) {
+  .sales-card {
+    height: 140px;
+    width: 140px;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+}
+@media screen and (max-width:327px) {
+  .sales-card {
+    height: 120px;
+    width: 120px;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+}
+@media screen and (min-width:1460px) {
+
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -189,9 +234,9 @@
 
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .img-fluid {
+  /* .img-fluid {
     width:100% !important;
-  }
+  } */
 }
 @media only screen and (min-width: 1200px) and (max-width: 1359px) {
 

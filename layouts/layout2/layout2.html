@@ -21,7 +21,7 @@
 <body>
     <!-- building block -->
     <header>
-      <div class="container fixed-top pr-0 pt-0 pb-0">
+      <div class="container fixed-top px-0 pt-0 pb-0">
         <div id="navbar" class="text-white d-flex justify-content-between  navbar navbar-expand-md navbar-dark border-bottom header-dark">
           <div class="order-3 order-md-1 col-md-4 collapse navbar-collapse" id="navbarMenu1">
             <ul class="navbar-nav mr-auto">
@@ -33,7 +33,8 @@
                   Coleções
                 </a>
                 <div id="colecoes" class="dropdown-menu hide my-3 py-0 border-0 text-white" aria-labelledby="navbarDropdown-colecao">
-                  <div class="row d-flex flex-row">
+                  <div class="row d-flex flex-row" style="padding-right: 0px !important;
+                  padding-left: 0px !important;">
                     <div>
                       <ul>
                         <li><span class="megamenu-title">Home</span></li>
@@ -78,9 +79,9 @@
           <div class="order-4 order-md-3 col-md-4 collapse navbar-collapse" id="navbarMenu2">
             <ul class="navbar-nav ml-auto">
               <li class="d-inline d-md-none"><br></li>
-              <li class="nav-item mx-1"><span data-feather="log-in"></span><span>&nbsp;Entrar</span></li>
+              <li class="nav-item mx-1"><span data-feather="log-in"></span><span class="d-inline">&nbsp;Entrar</span></li>
               <li class="nav-item mx-1"><span data-feather="search"></span><span class="d-none d-lg-inline">&nbsp;Pesquisar</span></li>
-              <li class="nav-item mx-1"><span data-feather="shopping-cart"></span><span>&nbsp;Carrinho</span></li>
+              <li class="nav-item mx-1"><span data-feather="shopping-cart"></span><span class="d-inline">&nbsp;Carrinho</span></li>
             </ul>
           </div>
           <div class="order-2 d-inline-block d-md-none text-right ">
@@ -91,7 +92,7 @@
         </div>
       </div>
 
-      <div class="jumbotron jumbotron-fluid mt-0 pt-0 pb-0" style="position:relative;">
+      <div class="jumbotron jumbotron-fluid my-0 pt-0 pb-0" style="position:relative;">
           <img id="jumbotron" class="img-fluid "src="img/background-1.jpg" alt="background">
       </div>
     </header>
@@ -152,29 +153,60 @@
       <span class="vitrine-control-next-icon" aria-hidden="true"></span>
   </div>
   <!--building block -->
-  <div class="categories-bar w-100 mx-0 px-auto bg-light" style="position: relative">
-  <div class="w-100 " style="clear:both; text-align:center">
-    <div class="row">
-      <div class="col-3 col-md-2 order-1 order-md-1 lead category-text-left">
-        <br><br>
-        Homens
-      </div>
-      <div class="col-9 col-md-4 order-2 order-md-2 mb-2 ;" style="  padding-right: 0px !important; padding-left: 0px !important;">
-        <img class="img-fluid categoria d-inline-block " src="img/categoriamen.jpg" alt="Categoria Masculina">
-      </div>
-      <div class="col-9 col-md-4 order-4 order-md-3" style="padding-right: 0px !important; padding-left: 0px !important;">
-        <img class="img-fluid categoria" src="img/sportcategory.jpg" alt="Seção de esportes" >
-      </div>
-      <div class="col-3 col-md-2 order-3 order-md-4 lead category-text-right">
-        <br><br>
-        Esporte
+  <div class="" style="background-color: #FFF7FC">
+    <div class="container text-center lead my-0 py-0" style="font-size: 2rem; font-weight: bold">
+        <p class="mb-0 ">Navegue por Categoria</p>
+    </div>
+    <div class="categories-bar px-auto pt-0 mt-0 overflow-hidden" style="position: relative">
+      <div style="clear:both; text-align:center">
+        <div class="row">
+          <div class="d-block d-sm-inline col-sm-3 col-md-2 order-1 order-md-1 lead category-text-left">
+            <span class="d-none d-sm-inline"><br><br></span>
+            <span class="d-inline">Masculino</span>
+          </div>
+          <div class="col-sm-9 col-md-4 order-2 order-md-2 mb-2 ;" style="  padding-right: 0px !important; padding-left: 0px !important;">
+            <img class="img-fluid categoria d-inline-block " src="img/categoriamen.jpg" alt="Categoria Masculina">
+          </div>
+          <div class="col-sm-9 col-md-4 order-4 order-md-3" style="padding-right: 0px !important; padding-left: 0px !important;">
+            <img class="img-fluid categoria" src="img/sportcategory.jpg" alt="Seção de esportes" >
+          </div>
+          <div class="d-block d-sm-inline col-sm-3 col-md-2 order-3 order-md-4 lead category-text-right">
+            <span class="d-none d-sm-inline"><br><br></span>
+            <span class="d-inline">Esportes</span>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+    <div class="text-center py-2">
+      <a class="btn btn-outline-secondary" href="preco.html">Veja todas as categorias</a>
+    </div>
   </div>
   <!--building block -->
-  <div class="text-center">
-    <p>texto</p>
+  <div class="border pt-2 pt-lg-3 d-flex flex-row justify-content-center bg-light">
+    <div class="row">
+      <div class="col-lg-4 col-xl-3 d-none d-lg-inline-block">
+        <div class="sales-pic">
+        </div>
+      </div>
+      <div class="col-lg-8 col-xl-9">
+        <div class="row mb-2">
+          <div class="sales-card d-inline mr-2">
+          </div>
+          <div class="sales-card d-inline mr-2">
+          </div>
+          <div class="sales-card d-none d-xl-inline">
+          </div>
+        </div>
+        <div class="row">
+          <div class="sales-card d-inline mr-2">
+          </div>
+          <div class="sales-card d-inline mr-2">
+          </div>
+          <div class="sales-card d-none d-xl-inline">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
 <footer class="container py-5">
