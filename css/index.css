@@ -87,7 +87,9 @@
   background-color: rgba(37,37,41,1);
 }
 
-
+.bg-salmao {
+  background-color: #FFF7FC;
+}
 @media screen and (min-width:768px) {
 	h1 {
 		font-size:4rem !important;
