@@ -136,7 +136,7 @@
     max-height: 540px;
     margin: 0 auto;
     min-height: 300px;
-        cursor: pointer;
+    cursor: pointer;
 }
 .category-text-right, .category-text-left {
   text-align: right;
@@ -148,6 +148,7 @@
   height: 240px;
   width: 240px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .sales-pic {
   height: 488px;
@@ -229,6 +230,7 @@
     width: 160px;
     box-sizing: border-box;
     border: 1px solid black;
+    cursor: pointer;
   }
 }
 @media screen and (max-width:369px) {
@@ -237,6 +239,7 @@
     width: 140px;
     box-sizing: border-box;
     border: 1px solid black;
+    cursor: pointer;
   }
 
 }
@@ -246,6 +249,7 @@
     width: 120px;
     box-sizing: border-box;
     border: 1px solid black;
+    cursor: pointer;
   }
   .card {
     min-width: 240px;
