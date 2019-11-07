@@ -75,13 +75,19 @@
   opacity: 0.8;
   background-color: #fff1e0;
 }
-.card-body {
-  min-height: 300px;
+.card {
   min-width: 300px;
-  max-height: 533px;
-  margin-right: 5px;
-  box-sizing: border-box;
-  padding-top: 3px !important;
+  cursor: pointer;
+  position: relative;
+}
+.card-hover-mask {
+  background-color: black;
+  position: absolute;
+  top:0px;
+  width:100%;
+  height:100%;
+  opacity:0.5;
+  display: none;
 }
 .vitrine-control-next-icon {
   height: 100px;
@@ -220,14 +226,7 @@
     box-sizing: border-box;
     border: 1px solid black;
   }
-  .card-body {
-    min-height: 280px;
-    min-width: 280px;
-    max-height: 497;
-    margin-right: 4px;
-    box-sizing: border-box;
-    padding-top: 3px !important;
-  }
+
 }
 @media screen and (max-width:327px) {
   .sales-card {
@@ -235,6 +234,9 @@
     width: 120px;
     box-sizing: border-box;
     border: 1px solid black;
+  }
+  .card {
+    min-width: 240px;
   }
 }
 @media screen and (min-width:1460px) {

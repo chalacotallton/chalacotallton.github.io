@@ -21,18 +21,23 @@ window.onscroll = function() {
 }
 
 //vitrine controls
-
 $(document).ready(function(){
   $(".vitrine-control-next-icon").click(function() {
     var x = document.getElementsByClassName("vitrine-item");
     for(var i = 1; i <= x.length; i++) {
       $('.vitrine-item.order-' + i).addClass('order-' + (i - 1));
       $('.vitrine-item.order-' + i).removeClass('order-' + i);
-      console.log(i);
     }
       var indice = parseInt(x.length);
       $('.vitrine-item.order-0').addClass('order-' + indice);
       $('.vitrine-item.order-0').removeClass('order-0');
-    console.log(indice);
+  })
+})
+//vitrine hover effect
+$(document).ready(function(){
+  $(".card").mouseover(function() {
+    $(this).find('.card-hover-mask').show();
+  }).mouseout(function() {
+    $(".card-hover-mask").hide();
   })
 })
