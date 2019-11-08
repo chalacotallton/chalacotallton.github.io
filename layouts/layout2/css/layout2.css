@@ -4,10 +4,24 @@
  */
 .jumbotron {
   background-color:transparent;
+  position: relative;
 }
-#jumbotron {
+#jumbotron-img {
   /* opacity: 0.9; */
   filter: brightness(70%) /* For IE8 and earlier */
+}
+#jumbotron-text {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display : flex;
+  align-items : center;
+  justify-content: left;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-left: 1rem;
 }
 .nav-item {
     cursor: pointer;
@@ -168,11 +182,15 @@
 .NavBarBottom a:hover {
   color: white !important;
 }
+.jumbotron-btn {
+  transform: scale(1);
+  transition: transform ease-out 300ms;
+}
+.jumbotron-btn:hover {
+  transform: scale(1.1);
+}
 /*Media based criteria */
 @media screen and (min-width:768px) {
-	h1 {
-		font-size:4rem !important;
-    }
   #colecoes {
     width: 500px;
   }
@@ -254,6 +272,9 @@
   .card {
     min-width: 240px;
   }
+  .jumbotron-btn {
+    font-size: 0.85rem;
+  }
 }
 @media screen and (min-width:1460px) {
 
@@ -262,7 +283,6 @@
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   .jumbotron {
-   position: relative;
    overflow: hidden;
  }
  .jumbotron img {
@@ -272,39 +292,59 @@
  min-width: 800px;
  width: auto;
  overflow: hidden;
-
+ }
+ #jumbotron-text-content {
+   font-size:8vw;
  }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
    .jumbotron {
-    position: relative;
     overflow: hidden;
   }
   .jumbotron img {
-  transform: translate(-30%,0%);
-  -webkit-transform: translate(-30%,0%);
-  -ms-transform: translate(-30%,0%);
-  min-width: 1150px;;
-  width: auto;
-  overflow: hidden;
-
-}
+    transform: translate(-30%,0%);
+    -webkit-transform: translate(-30%,0%);
+    -ms-transform: translate(-30%,0%);
+    min-width: 1100px;;
+    width: auto;
+    overflow: hidden;
+  }
+  #jumbotron-text-content {
+    font-size:7vw;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-
+  #jumbotron-text-content {
+    font-size:3.6rem;
+  }
+  #jumbotron-text {
+    left: 60px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* .img-fluid {
-    width:100% !important;
-  } */
+  #jumbotron-text-content {
+    font-size:4rem;
+  }
+  #jumbotron-text {
+    left: 60px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1359px) {
-
-
+  #jumbotron-text-content {
+    font-size:5rem;
+  }
+  #jumbotron-text {
+    left: 60px;
+  }
 }
 @media only screen and (min-width: 1360px) {
-
+  #jumbotron-text-content {
+    font-size:5rem;
+  }
+  #jumbotron-text {
+    left: 100px;
+  }
 }
