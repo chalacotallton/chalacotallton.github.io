@@ -20,20 +20,22 @@
   </head>
 <body>
     <!-- building block -->
-    <header class="">
-      <div class="container fixed-top pr-0 pt-0 pb-0">
+    <header>
+      <!-- section1 -->
+      <div class="container fixed-top px-0 pt-0 pb-0">
         <div id="navbar" class="text-white d-flex justify-content-between  navbar navbar-expand-md navbar-dark border-bottom header-dark">
           <div class="order-3 order-md-1 col-md-4 collapse navbar-collapse" id="navbarMenu1">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item mx-1 d-block">Roupas</li>
               <li class="nav-item mx-1">Calçados</li>
-              <li class="nav-item mx-1">Sale <span class="d-none d-xl-inline" data-feather="gift"></li>
+              <li class="nav-item mx-1">Sale <span class="d-none d-xl-inline" data-feather="gift"></span></li>
               <li class="nav-item dropdown megamenu show">
                 <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown-colecao" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                   Coleções
                 </a>
                 <div id="colecoes" class="dropdown-menu hide my-3 py-0 border-0 text-white" aria-labelledby="navbarDropdown-colecao">
-                  <div class="row d-flex flex-row">
+                  <div class="row d-flex flex-row" style="padding-right: 0px !important;
+                  padding-left: 0px !important;">
                     <div>
                       <ul>
                         <li><span class="megamenu-title">Home</span></li>
@@ -78,9 +80,9 @@
           <div class="order-4 order-md-3 col-md-4 collapse navbar-collapse" id="navbarMenu2">
             <ul class="navbar-nav ml-auto">
               <li class="d-inline d-md-none"><br></li>
-              <li class="nav-item mx-1"><span data-feather="log-in"></span><span>&nbsp;Entrar</span></li>
+              <li class="nav-item mx-1"><span data-feather="log-in"></span><span class="d-inline">&nbsp;Entrar</span></li>
               <li class="nav-item mx-1"><span data-feather="search"></span><span class="d-none d-lg-inline">&nbsp;Pesquisar</span></li>
-              <li class="nav-item mx-1"><span data-feather="shopping-cart"></span><span>&nbsp;Carrinho</span></li>
+              <li class="nav-item mx-1"><span data-feather="shopping-cart"></span><span class="d-inline">&nbsp;Carrinho</span></li>
             </ul>
           </div>
           <div class="order-2 d-inline-block d-md-none text-right ">
@@ -90,40 +92,165 @@
           </div>
         </div>
       </div>
-
-      <div class="jumbotron jumbotron-fluid mt-0 pt-0" style="position:relative;">
-          <img id="jumbotron" class="img-fluid "src="img/background-1.jpg" alt="background">
+      <!-- section2 -->
+      <div class="jumbotron jumbotron-fluid my-0 pt-0 pb-0 overflow-hidden">
+          <img id="jumbotron-img" class="img img-fluid overflow-hidden"src="img/background-1.jpg" alt="background">
+          <div id="jumbotron-text" class="text-white">
+            <h1 id="jumbotron-text-content" class="display-1 mt-1 mb-3 font-weight-light">Fashion Week <b class="d-block">Meu Ecommerce '20</b>
+            <a class="btn btn-light d-inline-block text-center jumbotron-btn" href="preco.html" style="display:block">Aproveite as Ofertas</a></h1>
+          </div>
       </div>
     </header>
     <!-- building block -->
 <main>
   <!-- building block -->
-  <div class="container-fluid overflow-hidden">
-      <div class="d-flex flex-row flex-nowrap">
-          <div id="vitrine" class="card card-body">Card</div>
-          <div class="card card-body">Card</div>
-          <div class="card card-body">Card</div>
-          <div class="card card-body">Card</div>
+  <div id="vitrine" class="container-fluid overflow-hidden border border-light rounded py-3 bg-light" style="position:relative">
+      <div class="d-flex flex-row flex-nowrap vitrine">
+        <div class="card vitrine-item order-1" >
+          <div class="card-hover-mask">
+          </div>
+          <img src="img/vitrine1.jpg" class="card-img-top" alt="Item 1 da Vitrine">
+          <div class="card-body">
+            <h5 class="card-title">Conjunto Camisas</h5>
+            <p class="card-text">R$ 199,90<br>P M G</p>
+          </div>
+
+        </div>
+        <div class="card vitrine-item order-2" >
+          <div class="card-hover-mask">
+
+          </div>
+          <img src="img/vitrine2.jpg" class="card-img-top" alt="Item 1 da Vitrine">
+          <div class="card-body">
+            <h5 class="card-title">Vestido Natal</h5>
+            <p class="card-text">R$ 199,90<br>P M G</p>
+          </div>
+        </div>
+        <div class="card vitrine-item order-3" >
+          <div class="card-hover-mask">
+
+          </div>
+          <img src="img/vitrine3.jpg" class="card-img-top" alt="Item 1 da Vitrine">
+          <div class="card-body">
+            <h5 class="card-title">Vestido Natal Azul</h5>
+            <p class="card-text">R$ 199,90<br>P M G</p>
+          </div>
+        </div>
+        <div class="card vitrine-item order-4" >
+          <div class="card-hover-mask">
+
+          </div>
+          <img src="img/vitrine1.jpg" class="card-img-top img-fluid" alt="Item 1 da Vitrine">
+          <div class="card-body">
+            <h5 class="card-title">Conjunto Camisas</h5>
+            <p class="card-text">R$ 199,90<br>P M G</p>
+          </div>
+        </div>
+        <div class="card vitrine-item order-5" >
+          <div class="card-hover-mask">
+
+          </div>
+          <img src="img/vitrine2.jpg" class="card-img-top" alt="Item 1 da Vitrine">
+          <div class="card-body">
+            <h5 class="card-title">Vestido Natal</h5>
+            <p class="card-text">R$ 199,90<br>P M G</p>
+          </div>
+        </div>
+        <div class="card vitrine-item order-6" >
+          <div class="card-hover-mask">
+
+          </div>
+          <img src="img/vitrine3.jpg" class="card-img-top" alt="Item 1 da Vitrine">
+          <div class="card-body">
+            <h5 class="card-title">Vestido Natal Azul</h5>
+            <p class="card-text">R$ 199,90<br>P M G</p>
+          </div>
+        </div>
       </div>
+      <span class="vitrine-control-next-icon" aria-hidden="true"></span>
   </div>
   <!--building block -->
-  <div class="text-center">
-    <p>texto</p>
+  <div class="" style="background-color: #FFF7FC">
+    <div class="container text-center lead my-0 py-0" style="font-size: 2rem; font-weight: bold">
+        <p class="mb-0 ">Navegue por Categoria</p>
+    </div>
+    <div class="categories-bar px-auto pt-0 mt-0 overflow-hidden" style="position: relative">
+      <div style="clear:both; text-align:center">
+        <div class="row">
+          <div class="d-block d-sm-inline col-sm-3 col-md-2 order-1 order-md-1 lead category-text-left">
+            <span class="d-none d-sm-inline"><br><br></span>
+            <span class="d-inline">Masculino</span>
+          </div>
+          <div class="col-sm-9 col-md-4 order-2 order-md-2 mb-2 ;" style="  padding-right: 0px !important; padding-left: 0px !important;">
+            <img class="img-fluid categoria d-inline-block " src="img/categoriamen.jpg" alt="Categoria Masculina">
+          </div>
+          <div class="col-sm-9 col-md-4 order-4 order-md-3" style="padding-right: 0px !important; padding-left: 0px !important;">
+            <img class="img-fluid categoria" src="img/sportcategory.jpg" alt="Seção de esportes" >
+          </div>
+          <div class="d-block d-sm-inline col-sm-3 col-md-2 order-3 order-md-4 lead category-text-right">
+            <span class="d-none d-sm-inline"><br><br></span>
+            <span class="d-inline">Esportes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-2">
+      <a class="btn btn-outline-secondary" href="preco.html">Veja todas as categorias</a>
+    </div>
   </div>
-  <div class="text-center">
-    <p>texto</p>
+  <!--building block -->
+  <div class="text-center py-2 bg-light border rounded">
+    <a class="btn btn-outline-secondary" href="preco.html">Quer conferir mais ofertas? Navegue por toda a liquidação!</a>
+    <div class="py-2 py-lg-3 d-flex flex-row justify-content-center">
+      <div class="row">
+        <div class="col-lg-4 col-xl-3 d-none d-lg-inline-block">
+          <div class="sales-pic">
+            <img src="img/sale3.jpg" alt="Banner Liquidação" style="height:100%; width:100%">
+          </div>
+        </div>
+        <div class="col-lg-8 col-xl-9">
+          <div class="row mb-2">
+            <div class="sales-card d-inline mr-2 border border-dark rounded">
+              <img src="img/vitrine1.jpg" alt="Liquidação 1" style="height:100%; width:100%">
+              <div class="sales-card-mask">
+              </div>
+            </div>
+            <div class="sales-card d-inline mr-2 border border-dark rounded">
+              <img src="img/vitrine2.jpg" alt="Liquidação 2" style="height:100%; width:100%">
+              <div class="sales-card-mask">
+              </div>
+            </div>
+            <div class="sales-card d-none d-xl-inline border border-dark rounded">
+              <img src="img/vitrine3.jpg" alt="Liquidação 3" style="height:100%; width:100%">
+              <div class="sales-card-mask">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="sales-card d-inline mr-2 border border-dark rounded">
+              <img src="img/vitrine1.jpg" alt="Liquidação 1" style="height:100%; width:100%">
+              <div class="sales-card-mask">
+              </div>
+            </div>
+            <div class="sales-card d-inline mr-2 border border-dark rounded">
+              <img src="img/vitrine2.jpg" alt="Liquidação 2" style="height:100%; width:100%">
+              <div class="sales-card-mask">
+              </div>
+            </div>
+            <div class="sales-card d-none d-xl-inline border border-dark rounded">
+              <img src="img/vitrine3.jpg" alt="Liquidação 3" style="height:100%; width:100%">
+              <div class="sales-card-mask">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="text-center">
-    <p>texto</p>
-  </div>
-  <div class="text-center">
-    <p>texto</p>
-  </div>
-  <div class="text-center">
-    <p>texto</p>
-  </div>
-  <div class="text-center">
-    <p>texto</p>
+  <!-- building block -->
+  <div class="w-100 NavBarBottom d-flex flex-row justify-content-around">
+    <a class="nav-link text-secondary overflow-hidden" href="#">Topo do Site</a>
+    <a class="nav-link text-secondary overflow-hidden" href="#"><span class="d-inline">Ir para o Carrinho</span><span data-feather="shopping-cart"></span></a>
   </div>
 </main>
 <footer class="container py-5">

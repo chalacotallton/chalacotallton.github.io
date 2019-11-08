@@ -20,9 +20,31 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-//vitrine
+//vitrine controls
 $(document).ready(function(){
-  console.log($("#vitrine").width());
-  var d = document.getElementById("vitrine");
-  d.style.left = "-300px";
-});
+  $(".vitrine-control-next-icon").click(function() {
+    var x = document.getElementsByClassName("vitrine-item");
+    for(var i = 1; i <= x.length; i++) {
+      $('.vitrine-item.order-' + i).addClass('order-' + (i - 1));
+      $('.vitrine-item.order-' + i).removeClass('order-' + i);
+    }
+      var indice = parseInt(x.length);
+      $('.vitrine-item.order-0').addClass('order-' + indice);
+      $('.vitrine-item.order-0').removeClass('order-0');
+  })
+})
+//vitrine hover effect
+$(document).ready(function(){
+  $(".card").mouseover(function() {
+    $(this).find('.card-hover-mask').show();
+  }).mouseout(function() {
+    $(".card-hover-mask").hide();
+  })
+})
+$(document).ready(function(){
+  $(".sales-card").mouseover(function() {
+    $(this).find('.sales-card-mask').show();
+  }).mouseout(function() {
+    $(".sales-card-mask").hide();
+  })
+})
