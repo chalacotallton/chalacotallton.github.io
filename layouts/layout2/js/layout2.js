@@ -41,3 +41,10 @@ $(document).ready(function(){
     $(".card-hover-mask").hide();
   })
 })
+$(document).ready(function(){
+  $(".sales-card").mouseover(function() {
+    $(this).find('.sales-card-mask').show();
+  }).mouseout(function() {
+    $(".sales-card-mask").hide();
+  })
+})
