@@ -58,7 +58,9 @@
 @media (max-width: 767px) {
   .header-dark {
     background-color: rgba(16, 16, 16, 0.65) !important;
-     width: 100%;
+    width: 100%;
+    position: absolute;
+    overflow-y: scroll;
   }
   .container {
      max-width: 100% !important;
@@ -75,10 +77,6 @@
 }
 .overflow-hidden { overflow: hidden; }
 .overflow-auto { overflow: auto; }
-#ddmenu {
-  cursor: pointer;
-  font-size: 28px;
-}
 #navbar {
   transition: top 0.5s ease-in 0.5s;
 }
