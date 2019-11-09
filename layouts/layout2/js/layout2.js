@@ -19,6 +19,12 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+//toggle menu js
+function menuLayer() {
+  $(document).scrollTop(0);
+  $("header").toggleClass("position-relative");
+  var x = $(window).height();
+}
 
 //vitrine controls
 $(document).ready(function(){
