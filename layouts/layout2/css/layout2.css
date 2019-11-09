@@ -75,10 +75,6 @@
 }
 .overflow-hidden { overflow: hidden; }
 .overflow-auto { overflow: auto; }
-#ddmenu {
-  cursor: pointer;
-  font-size: 28px;
-}
 #navbar {
   transition: top 0.5s ease-in 0.5s;
 }
