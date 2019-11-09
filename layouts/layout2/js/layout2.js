@@ -23,9 +23,10 @@ window.onscroll = function() {
 function menuLayer() {
   $(document).scrollTop(0);
   $("header").toggleClass("position-relative");
-  var x = $(window).height();
 }
-
+$(window).resize(function() {
+  $("header").removeClass("position-relative");
+});
 //vitrine controls
 $(document).ready(function(){
   $(".vitrine-control-next-icon").click(function() {
