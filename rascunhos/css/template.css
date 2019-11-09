@@ -87,9 +87,6 @@
 
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .img-fluid {
-    width:100% !important;
-  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1359px) {
   main {
@@ -104,7 +101,6 @@
     margin: 0 auto;
   }
 }
-
 /* vertical carousel */
 .vert .carousel-item-next.carousel-item-left,
 .vert .carousel-item-prev.carousel-item-right {
@@ -123,4 +119,10 @@
 -webkit-transform: translate3d(0,-100%, 0);
         transform: translate3d(0,-100%, 0);
 }
-/* vertical carousel */
+
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
+/* vertical carousel end*/
