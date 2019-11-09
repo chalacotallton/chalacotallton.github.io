@@ -54,7 +54,7 @@
 }
 #mobilenavbar {
   z-index: 1050;
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 0;
   background-color: rgba(37,37,41,1);

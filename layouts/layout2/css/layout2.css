@@ -26,6 +26,19 @@
 .nav-item {
     cursor: pointer;
 }
+.nav-item a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav-item:hover {
+  font-weight: bold;
+}
+.dropdown-item {
+  color: black !important;
+}
+.dropdown-item:hover{
+  background-color: rgba(255,255,255,1)
+}
 .site-header {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -67,9 +80,9 @@
   .nav-item:hover {
     background-color: rgba(128, 128, 128, 0.7) !important;
   }
-}
-.nav-item:hover {
-  font-weight: bold !important;
+  #navbar a {
+    display: block;
+  }
 }
 #logocenter {
   margin: 0 auto;
@@ -78,6 +91,10 @@
 .overflow-auto { overflow: auto; }
 #navbar {
   transition: top 0.5s ease-in 0.5s;
+}
+#navbar li a {
+  /* display: inline-block; */
+   width: 90%;
 }
 .nav-link {
   display: inline;
