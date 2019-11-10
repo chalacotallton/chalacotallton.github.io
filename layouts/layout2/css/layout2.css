@@ -253,6 +253,24 @@
   transition: transform 2s ease;
   transition: transform 2s ease, -webkit-transform 2s ease;
 }
+.vert .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  transform: rotate(90deg);
+}
+.vert .carousel-indicators {
+  transform: rotate(90deg);
+  margin-left: 0px;
+  margin-right: 0px;
+  top: 0px;
+}
+.vert .carousel-indicators-left {
+  right: auto;
+  bottom: auto;
+  top: calc(50% - 24px);
+}
+
 /* vertical carousel end*/
 
 /*Media based criteria */
