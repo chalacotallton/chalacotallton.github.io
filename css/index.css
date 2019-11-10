@@ -64,6 +64,10 @@ html {
 .bg-salmao {
   background-color: #FFF7FC;
 }
+.bg-gradiente-light2salmao {
+  background: rgb(248,249,250);
+  background: linear-gradient(90deg, rgba(248,249,250,1) 40%, rgba(255,247,252,1) 60%);
+}
 @media screen and (min-width:768px) {
 	h1 {
 		font-size:4rem !important;
