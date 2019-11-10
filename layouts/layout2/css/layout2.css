@@ -284,9 +284,17 @@
   bottom: auto;
   top: calc(50% - 24px);
 }
-
+.vert .carousel-inner {
+  min-height: 500px;
+  overflow: hidden;
+}
 
 /* vertical carousel end*/
+.carousel img {
+  /* opacity: 0.9; */
+  filter: brightness(75%); /* For IE8 and earlier */
+
+}
 
 /*Media based criteria */
 @media screen and (min-width:768px) {
