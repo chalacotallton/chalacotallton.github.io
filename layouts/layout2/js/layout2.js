@@ -48,6 +48,7 @@ $(document).ready(function(){
     $(".card-hover-mask").hide();
   })
 })
+//sales hover effect
 $(document).ready(function(){
   $(".sales-card").mouseover(function() {
     $(this).find('.sales-card-mask').show();
@@ -55,3 +56,11 @@ $(document).ready(function(){
     $(".sales-card-mask").hide();
   })
 })
+
+//cart onclick
+$(document).ready(function(){
+  $("#myCart").click(function () {
+    console.log("cart clicked");
+  })
+
+});
