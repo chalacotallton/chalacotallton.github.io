@@ -171,6 +171,7 @@
       <span class="vitrine-control-next-icon" aria-hidden="true"></span>
   </div>
   <!-- Carousel block -->
+  <div class="mcontainer">
   <div id="layoutCarrossel" class="carousel slide mx-md-3 d-md-none" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#layoutCarrossel" data-slide-to="0" class="active"></li>
@@ -183,9 +184,27 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <a href="layouts/layout2/layout2.html"><img class="d-block w-100 img-fluid" src="img/mencategory.jpg" alt="First slide"></a>
+        <span class="carousel-mask" data-tool-tip="Masculino"></span>
       </div>
       <div class="carousel-item">
         <a href="layouts/layout2/layout2.html"><img class="d-block w-100 img-fluid" src="img/womencategory.jpg" alt="First slide"></a>
+        <span class="carousel-mask" data-tool-tip="Feminino"></span>
+      </div>
+      <div class="carousel-item">
+        <a href="layouts/layout2/layout2.html"><img class="d-block w-100 img-fluid" src="img/kidscategory.jpg" alt="First slide"></a>
+        <span class="carousel-mask" data-tool-tip="Infantil"></span>
+      </div>
+      <div class="carousel-item">
+        <a href="layouts/layout2/layout2.html"><img class="d-block w-100 img-fluid" src="img/sportcategory.jpg" alt="First slide"></a>
+        <span class="carousel-mask" data-tool-tip="Esportes"></span>
+      </div>
+      <div class="carousel-item">
+        <a href="layouts/layout2/layout2.html"><img class="d-block w-100 img-fluid" src="img/wintercategory.jpg" alt="First slide"></a>
+        <span class="carousel-mask" data-tool-tip="Inverno"></span>
+      </div>
+      <div class="carousel-item">
+        <a href="layouts/layout2/layout2.html"><img class="d-block w-100 img-fluid" src="img/summercategory.jpg" alt="First slide"></a>
+        <span class="carousel-mask" data-tool-tip="Verão"></span>
       </div>
     </div>
     <a class="carousel-control-prev" href="#layoutCarrossel" role="button" data-slide="prev">
@@ -196,6 +215,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+  </div>
   </div>
   <!-- vertical carousel -->
   <div style="background-color: #FFF7FC;">
@@ -257,7 +277,7 @@
     <div class="py-2 py-lg-3 d-flex flex-row justify-content-center">
       <div class="row">
         <div class="col-lg-4 col-xl-3 d-none d-lg-inline-block">
-          <div class="sales-pic">
+          <div class="sales-banner">
             <img src="img/sale3.jpg" alt="Banner Liquidação" style="height:100%; width:100%">
           </div>
         </div>
@@ -265,16 +285,19 @@
           <div class="row mb-2">
             <div class="sales-card d-inline mr-2 border border-dark rounded">
               <img src="img/vitrine1.jpg" alt="Liquidação 1" style="height:100%; width:100%">
-              <div class="sales-card-mask">
+              <span class="sales-pic-mask" data-tool-tip="35% off"></span>
+              <div class="sales-card-mask" data-tool-tip="35% off">
               </div>
             </div>
             <div class="sales-card d-inline mr-2 border border-dark rounded">
               <img src="img/vitrine2.jpg" alt="Liquidação 2" style="height:100%; width:100%">
+              <span class="sales-pic-mask" data-tool-tip="50% off"></span>
               <div class="sales-card-mask">
               </div>
             </div>
             <div class="sales-card d-none d-xl-inline border border-dark rounded">
               <img src="img/vitrine3.jpg" alt="Liquidação 3" style="height:100%; width:100%">
+              <span class="sales-pic-mask" data-tool-tip="5% off"></span>
               <div class="sales-card-mask">
               </div>
             </div>
@@ -282,16 +305,19 @@
           <div class="row">
             <div class="sales-card d-inline mr-2 border border-dark rounded">
               <img src="img/vitrine1.jpg" alt="Liquidação 1" style="height:100%; width:100%">
+              <span class="sales-pic-mask" data-tool-tip="65% off"></span>
               <div class="sales-card-mask">
               </div>
             </div>
             <div class="sales-card d-inline mr-2 border border-dark rounded">
               <img src="img/vitrine2.jpg" alt="Liquidação 2" style="height:100%; width:100%">
+              <span class="sales-pic-mask" data-tool-tip="35% off"></span>
               <div class="sales-card-mask">
               </div>
             </div>
             <div class="sales-card d-none d-xl-inline border border-dark rounded">
               <img src="img/vitrine3.jpg" alt="Liquidação 3" style="height:100%; width:100%">
+              <span class="sales-pic-mask" data-tool-tip="35% off"></span>
               <div class="sales-card-mask">
               </div>
             </div>
@@ -301,7 +327,7 @@
     </div>
     <a class="btn btn-outline-secondary" href="preco.html">Quer conferir mais ofertas? Navegue por toda a liquidação!</a>
   </div>
-  <!-- building block -->
+  <!-- rodapé block -->
   <div class="w-100 NavBarBottom d-flex flex-row justify-content-around">
     <a class="nav-link text-secondary overflow-hidden" href="#">Topo do Site</a>
     <a class="nav-link text-secondary overflow-hidden" href="#"><span class="d-inline">Ir para o Carrinho</span><span data-feather="shopping-cart"></span></a>

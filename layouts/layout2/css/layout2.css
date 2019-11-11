@@ -179,10 +179,29 @@ html {
   cursor: pointer;
   position: relative
 }
-.sales-pic {
+.sales-banner {
   height: 488px;
   width: 240px;
   box-sizing: border-box;
+}
+.sales-pic-mask {
+  position: absolute;
+  top: 3%;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  margin-left: 3%;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: left;
+  background: red;
+  color: white;
+  font-weight: 600;
+  border: 2px solid white;
+  border-radius: 30%
+}
+.sales-pic-mask:after {
+  content: attr(data-tool-tip);
 }
 .sales-card-mask {
   background-color: black;
@@ -247,8 +266,23 @@ html {
 .vert-carousel-mask-left::after, .vert-carousel-mask-right::after {
   content: attr(data-tool-tip);
 }
-
-
+.carousel-mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1500;
+  background-color: transparent;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  font-variant: small-caps;
+  color: white;
+}
+.carousel-mask:after {
+  content: attr(data-tool-tip);
+}
 /* vertical carousel */
 .vert .carousel-item-next.carousel-item-left,
 .vert .carousel-item-prev.carousel-item-right {
@@ -278,6 +312,7 @@ html {
   height: 10px;
   border-radius: 100%;
   transform: rotate(90deg);
+  z-index: 2000;
 }
 .vert .carousel-indicators {
   transform: rotate(90deg);
@@ -286,6 +321,7 @@ html {
   top: 0px;
   bottom: auto;
   top: calc(50% - 24px);
+    z-index: 2000;
 }
 .vert .carousel-indicators-left {
   right: auto;
@@ -297,7 +333,18 @@ html {
   min-height: 500px;
   overflow: hidden;
 }
+.carousel-indicators {
+  z-index: 2000;
+}
+.carousel-indicators li{
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+}
 
+.carousel-control-prev, .carousel-control-next {
+  z-index: 2000;
+}
 /* vertical carousel end*/
 .carousel img {
   /* opacity: 0.9; */
@@ -429,6 +476,10 @@ html {
   }
   #jumbotron-text-content {
     font-size:7vw;
+  }
+  .mcontainer {
+    width:90%;
+    margin: 0 auto;
   }
 }
 
