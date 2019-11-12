@@ -28,9 +28,9 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item mx-1 d-block">Roupas</li>
               <li class="nav-item mx-1">Calçados</li>
-              <li class="nav-item mx-1">Sale <span class="d-none d-xl-inline" data-feather="gift"></span></li>
+              <li class="nav-item mx-1"><a href="../index.html">Sale <span class="d-inline d-md-none d-xl-inline" data-feather="gift"></span></a></li>
               <li class="nav-item dropdown megamenu show">
-                <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown-colecao" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <a class="nav-link dropdown-toggle w-100" href="#!" id="navbarDropdown-colecao" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                   Coleções
                 </a>
                 <div id="colecoes" class="dropdown-menu hide my-3 py-0 border-0 text-white" aria-labelledby="navbarDropdown-colecao">
@@ -81,8 +81,48 @@
             <ul class="navbar-nav ml-auto">
               <li class="d-inline d-md-none"><br></li>
               <li class="nav-item mx-1"><span data-feather="log-in"></span><span class="d-inline">&nbsp;Entrar</span></li>
-              <li class="nav-item mx-1"><span data-feather="search"></span><span class="d-none d-lg-inline">&nbsp;Pesquisar</span></li>
-              <li class="nav-item mx-1"><span data-feather="shopping-cart"></span><span class="d-inline">&nbsp;Carrinho</span></li>
+              <li id="myCart" class="nav-item mx-1"><a class="d-inline" href="carrinho.html"><span data-feather="shopping-cart"></span><span class="d-inline">&nbsp;Carrinho</a></span></li>
+              <li class="nav-item mx-1">
+                <a class="nav-link dropdown-toggle no-icon w-100" href="#!" id="navbarDropdown-pesquisar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="">
+                  <span data-feather="search"></span><span class="d-inline d-md-none d-lg-inline">Pesquisar</span>
+                </a>
+                <div id="searchbar" class="dropdown-menu hide my-3 py-0 border-0 text-white" aria-labelledby="navbarDropdown-pesquisar" style="border-radius:0">
+                  <form class="" method="post">
+                    <table class="d-inline d-md-none" style="float:left">
+                      <tr>
+                        <td><input type="text" name="searchQuery" placeholder="Pesquise aqui" size="30"></td>
+                        <td><input type="submit" value=">" style="color:blue"/></td>
+                      </tr>
+                    </table>
+                  </form>
+                  <form method="post">
+                    <table class="d-none d-md-block d-lg-none" style="float:left">
+                      <tr>
+                        <td><input type="text" name="searchQuery" placeholder="Pesquise aqui" size="28"></td>
+                        <td><input type="submit" value=">" style="color:blue"/></td>
+                      </tr>
+                    </table>
+                  </form>
+                  <form method="post">
+                    <table class="d-none d-lg-block d-xl-none" style="float:left">
+                      <tr>
+                        <td><input type="text" name="searchQuery" placeholder="Pesquise aqui" size="35"></td>
+                        <td><input type="submit" value=">" style="color:blue"/></td>
+                      </tr>
+                    </table>
+                  </form>
+                  <form method="post">
+                    <table class="d-none d-xl-block" style="float:left">
+                      <tr>
+                        <td><input type="text" name="searchQuery" placeholder="Pesquise aqui" size="45"></td>
+                        <td><input type="submit" value=">" style="color:blue"/></td>
+                      </tr>
+                    </table>
+                  </form>
+
+
+                </div>
+              </li>
             </ul>
           </div>
           <div class="order-2 d-inline-block d-md-none text-right ">
@@ -92,19 +132,27 @@
           </div>
         </div>
       </div>
-
+      <!--Cart preview incomplete
+       <div id="cartPreview" class="">
+        <div class="cartpreviewL d-none d-md-block">
+          <a class="btn btn-light d-block text-center" href="preco.html">Ir ao Carrinho</a>
+        </div>
+        <div class="d-block d-md-none">
+          <a class="btn btn-light d-block text-center" href="preco.html" style="display:block; width:100%">Aproveite as Ofertas</a>
+        </div>
+      </div> -->
     </header>
     <!-- building block -->
 <main>
   <!-- Jumbotron -->
   <div class="jumbotron jumbotron-fluid my-0 pt-0 pb-0 overflow-hidden">
-      <img id="jumbotron-img" class="img img-fluid overflow-hidden"src="img/background-1.jpg" alt="background">
+      <img id="jumbotron-img" class="img img-fluid overflow-hidden"src="img/background.jpg" alt="background">
       <div id="jumbotron-text" class="text-white">
         <h1 id="jumbotron-text-content" class="display-1 mt-1 mb-3 font-weight-light">Fashion Week <b class="d-block">Meu Ecommerce '20</b>
         <a class="btn btn-light d-inline-block text-center jumbotron-btn" href="preco.html" style="display:block">Aproveite as Ofertas</a></h1>
       </div>
   </div>
-  <!-- building block -->
+  <!-- vitrine block -->
   <div id="vitrine" class="container-fluid overflow-hidden border border-light rounded py-3 bg-light" style="position:relative">
       <div class="d-flex flex-row flex-nowrap vitrine">
         <div class="card vitrine-item order-1" >
@@ -170,42 +218,114 @@
       </div>
       <span class="vitrine-control-next-icon" aria-hidden="true"></span>
   </div>
-  <!--building block -->
-  <div class="" style="background-color: #FFF7FC">
+  <!-- Carousel block -->
+  <div class="mcontainer">
+  <div id="layoutCarrossel" class="carousel slide mx-md-3 d-md-none" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#layoutCarrossel" data-slide-to="0" class="active"></li>
+      <li data-target="#layoutCarrossel" data-slide-to="1"></li>
+      <li data-target="#layoutCarrossel" data-slide-to="2"></li>
+      <li data-target="#layoutCarrossel" data-slide-to="3"></li>
+      <li data-target="#layoutCarrossel" data-slide-to="4"></li>
+      <li data-target="#layoutCarrossel" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="layouts/layout2/layout2.html"><img class="d-block w-100 img-fluid" src="img/mencategory.jpg" alt="First slide"></a>
+        <span class="carousel-mask" data-tool-tip="Masculino"></span>
+      </div>
+      <div class="carousel-item">
+        <a href="layouts/layout2/layout2.html"><img class="d-block w-100 img-fluid" src="img/womencategory.jpg" alt="First slide"></a>
+        <span class="carousel-mask" data-tool-tip="Feminino"></span>
+      </div>
+      <div class="carousel-item">
+        <a href="layouts/layout2/layout2.html"><img class="d-block w-100 img-fluid" src="img/kidscategory.jpg" alt="First slide"></a>
+        <span class="carousel-mask" data-tool-tip="Infantil"></span>
+      </div>
+      <div class="carousel-item">
+        <a href="layouts/layout2/layout2.html"><img class="d-block w-100 img-fluid" src="img/sportcategory.jpg" alt="First slide"></a>
+        <span class="carousel-mask" data-tool-tip="Esportes"></span>
+      </div>
+      <div class="carousel-item">
+        <a href="layouts/layout2/layout2.html"><img class="d-block w-100 img-fluid" src="img/wintercategory.jpg" alt="First slide"></a>
+        <span class="carousel-mask" data-tool-tip="Inverno"></span>
+      </div>
+      <div class="carousel-item">
+        <a href="layouts/layout2/layout2.html"><img class="d-block w-100 img-fluid" src="img/summercategory.jpg" alt="First slide"></a>
+        <span class="carousel-mask" data-tool-tip="Verão"></span>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#layoutCarrossel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#layoutCarrossel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+  <!-- vertical carousel -->
+  <div style="background-color: #FFF7FC;">
     <div class="container text-center lead my-0 py-0" style="font-size: 2rem; font-weight: bold">
         <p class="mb-0 ">Navegue por Categoria</p>
     </div>
-    <div class="categories-bar px-auto pt-0 mt-0 overflow-hidden" style="position: relative">
-      <div style="clear:both; text-align:center">
-        <div class="row">
-          <div class="d-block d-sm-inline col-sm-3 col-md-2 order-1 order-md-1 lead category-text-left">
-            <span class="d-none d-sm-inline"><br><br></span>
-            <span class="d-inline">Masculino</span>
+    <div class="container d-none d-md-block" style="background-color: #FFF7FC; cursor:pointer;">
+    <div class="row d-flex justify-content-center">
+      <div id="carouselVertleft" class="carousel vert slide col-6 px-0" data-ride="carousel" data-interval="5000">
+        <ol class="carousel-indicators carousel-indicators-left">
+          <li data-target="#carouselVertleft" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselVertleft" data-slide-to="1"></li>
+          <li data-target="#carouselVertleft" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" style="min-height:300px;">
+          <div class="carousel-item active" style="min-height:300px;">
+            <img class="d-block mx-0 img img-fluid" style="min-height:300px;"src="img/mencategory.jpg" alt="First slide">
+            <span class="vert-carousel-mask-left" data-tool-tip="Masculino"></span>
           </div>
-          <div class="col-sm-9 col-md-4 order-2 order-md-2 mb-2 ;" style="  padding-right: 0px !important; padding-left: 0px !important;">
-            <img class="img-fluid categoria d-inline-block " src="img/categoriamen.jpg" alt="Categoria Masculina">
+          <div class="carousel-item">
+            <img class="d-block mx-0 img img-fluid" style="min-height:300px;"src="img/womencategory.jpg" alt="Second slide">
+            <span class="vert-carousel-mask-left" data-tool-tip="Feminino"></span>
           </div>
-          <div class="col-sm-9 col-md-4 order-4 order-md-3" style="padding-right: 0px !important; padding-left: 0px !important;">
-            <img class="img-fluid categoria" src="img/sportcategory.jpg" alt="Seção de esportes" >
-          </div>
-          <div class="d-block d-sm-inline col-sm-3 col-md-2 order-3 order-md-4 lead category-text-right">
-            <span class="d-none d-sm-inline"><br><br></span>
-            <span class="d-inline">Esportes</span>
+          <div class="carousel-item">
+            <img class="d-block mx-0 img img-fluid" style="min-height:300px;"src="img/kidscategory.jpg" alt="Third slide">
+            <span class="vert-carousel-mask-left" data-tool-tip="Infantil"></span>
           </div>
         </div>
       </div>
+      <div id="carouselVertright" class="carousel vert slide col-6 px-0" data-ride="carousel" data-interval="5000">
+        <ol class="carousel-indicators carousel-indicators-right">
+          <li data-target="#carouselVertright" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselVertright" data-slide-to="1"></li>
+          <li data-target="#carouselVertright" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" style="min-height:300px;">
+          <div class="carousel-item active" style="min-height:300px;">
+            <img class="d-block mx-0 img img-fluid" style="min-height:300px;" src="img/sportcategory.jpg" alt="First slide">
+            <span class="vert-carousel-mask-right" data-tool-tip="Esportes"></span>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block mx-0 img img-fluid" style="min-height:300px;" src="img/wintercategory.jpg" alt="Second slide">
+            <span class="vert-carousel-mask-right" data-tool-tip="Inverno"></span>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block mx-0 img img-fluid"  style="min-height:300px;"src="img/summercategory.jpg" alt="Third slide">
+            <span class="vert-carousel-mask-right" data-tool-tip="Verão"></span>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
     <div class="text-center py-2">
       <a class="btn btn-outline-secondary" href="preco.html">Veja todas as categorias</a>
     </div>
   </div>
-  <!--building block -->
+  <!--sale block -->
   <div class="text-center py-2 bg-light border rounded">
-    <a class="btn btn-outline-secondary" href="preco.html">Quer conferir mais ofertas? Navegue por toda a liquidação!</a>
     <div class="py-2 py-lg-3 d-flex flex-row justify-content-center">
       <div class="row">
         <div class="col-lg-4 col-xl-3 d-none d-lg-inline-block">
-          <div class="sales-pic">
+          <div class="sales-banner">
             <img src="img/sale3.jpg" alt="Banner Liquidação" style="height:100%; width:100%">
           </div>
         </div>
@@ -213,16 +333,19 @@
           <div class="row mb-2">
             <div class="sales-card d-inline mr-2 border border-dark rounded">
               <img src="img/vitrine1.jpg" alt="Liquidação 1" style="height:100%; width:100%">
-              <div class="sales-card-mask">
+              <span class="sales-pic-mask" data-tool-tip="35% off"></span>
+              <div class="sales-card-mask" data-tool-tip="35% off">
               </div>
             </div>
             <div class="sales-card d-inline mr-2 border border-dark rounded">
               <img src="img/vitrine2.jpg" alt="Liquidação 2" style="height:100%; width:100%">
+              <span class="sales-pic-mask" data-tool-tip="50% off"></span>
               <div class="sales-card-mask">
               </div>
             </div>
             <div class="sales-card d-none d-xl-inline border border-dark rounded">
               <img src="img/vitrine3.jpg" alt="Liquidação 3" style="height:100%; width:100%">
+              <span class="sales-pic-mask" data-tool-tip="5% off"></span>
               <div class="sales-card-mask">
               </div>
             </div>
@@ -230,16 +353,19 @@
           <div class="row">
             <div class="sales-card d-inline mr-2 border border-dark rounded">
               <img src="img/vitrine1.jpg" alt="Liquidação 1" style="height:100%; width:100%">
+              <span class="sales-pic-mask" data-tool-tip="65% off"></span>
               <div class="sales-card-mask">
               </div>
             </div>
             <div class="sales-card d-inline mr-2 border border-dark rounded">
               <img src="img/vitrine2.jpg" alt="Liquidação 2" style="height:100%; width:100%">
+              <span class="sales-pic-mask" data-tool-tip="35% off"></span>
               <div class="sales-card-mask">
               </div>
             </div>
             <div class="sales-card d-none d-xl-inline border border-dark rounded">
               <img src="img/vitrine3.jpg" alt="Liquidação 3" style="height:100%; width:100%">
+              <span class="sales-pic-mask" data-tool-tip="35% off"></span>
               <div class="sales-card-mask">
               </div>
             </div>
@@ -247,11 +373,12 @@
         </div>
       </div>
     </div>
+    <a class="btn btn-outline-secondary" href="preco.html">Quer conferir mais ofertas? Navegue por toda a liquidação!</a>
   </div>
-  <!-- building block -->
+  <!-- rodapé block -->
   <div class="w-100 NavBarBottom d-flex flex-row justify-content-around">
     <a class="nav-link text-secondary overflow-hidden" href="#">Topo do Site</a>
-    <a class="nav-link text-secondary overflow-hidden" href="#"><span class="d-inline">Ir para o Carrinho</span><span data-feather="shopping-cart"></span></a>
+    <a class="nav-link text-secondary overflow-hidden" href="carrinho.html"><span class="d-inline">Ir para o Carrinho</span><span data-feather="shopping-cart"></span></a>
   </div>
 </main>
 <footer class="container py-5">

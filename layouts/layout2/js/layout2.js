@@ -23,9 +23,10 @@ window.onscroll = function() {
 function menuLayer() {
   $(document).scrollTop(0);
   $("header").toggleClass("position-relative");
-  var x = $(window).height();
 }
-
+$(window).resize(function() {
+  $("header").removeClass("position-relative");
+});
 //vitrine controls
 $(document).ready(function(){
   $(".vitrine-control-next-icon").click(function() {
@@ -47,6 +48,7 @@ $(document).ready(function(){
     $(".card-hover-mask").hide();
   })
 })
+//sales hover effect
 $(document).ready(function(){
   $(".sales-card").mouseover(function() {
     $(this).find('.sales-card-mask').show();
@@ -54,3 +56,12 @@ $(document).ready(function(){
     $(".sales-card-mask").hide();
   })
 })
+
+//cart onclick
+$(document).ready(function(){
+  $("#myCart").click(function () {
+    $("#cartPreview").toggle();
+    console.log("cart clicked");
+  })
+
+});
