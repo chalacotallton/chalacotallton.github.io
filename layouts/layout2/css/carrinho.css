@@ -23,13 +23,21 @@ html {
 .row.title {
   font-weight: 500;
   font-variant: small-caps;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .cart-body {
   width: 100%;
   min-height: 250px;
   background-color: white;
   padding: 2.5%;
+  font-size: 1rem;
+}
+.img-thumbnail {
+  width: 120px;
+  height: 120px;
+  box-sizing: content-box;
+  padding: 0;
+
 }
 .cart-header {
   color: black;

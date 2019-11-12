@@ -475,6 +475,11 @@ header a {
  #jumbotron-text-content {
    font-size:8vw;
  }
+ .megamenu {
+   max-height: 350px;
+   overflow-y: auto;
+   overflow-x: hidden;
+ }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -496,6 +501,11 @@ header a {
   .mcontainer {
     width:90%;
     margin: 0 auto;
+  }
+  .megamenu {
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 
