@@ -1,0 +1,106 @@
+html {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.row.title {
+  font-weight: 500;
+  font-variant: small-caps;
+  text-transform: uppercase;
+}
+.cart-body {
+  width: 100%;
+  min-height: 250px;
+  background-color: white;
+  padding: 2.5%;
+}
+.cart-header {
+  color: black;
+  text-align: center;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 600;
+  box-sizing: border-box;
+  background-color: rgb(192,192,192);
+  line-height: 2.5rem;
+  font-variant: small-caps;
+}
+.cart-footer {
+  background: white;
+  padding: 2.5%;
+  border-top: 1px solid silver;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.NavBarBottom {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  height: 48px;
+  padding: 8px;
+}
+.NavBarBottom a:hover {
+  color: white !important;
+}
+
+@media screen and (min-width:768px) {
+	h1 {
+		font-size:4rem !important;
+    }
+
+}
+@media screen and (min-width:992px) {
+
+}
+@media screen and (min-width:1200px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1359px) {
+  main {
+    width:90%;
+    margin: 0 auto;
+  }
+
+}
+@media only screen and (min-width: 1360px) {
+  main {
+    width:84%;
+    margin: 0 auto;
+  }
+}
