@@ -6,7 +6,9 @@ html {
 /*
  * Custom translucent site header
  */
-
+.btn-success {
+  cursor: pointer;
+}
 .site-header {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
