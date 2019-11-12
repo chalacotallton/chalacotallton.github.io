@@ -81,8 +81,40 @@
             <ul class="navbar-nav ml-auto">
               <li class="d-inline d-md-none"><br></li>
               <li class="nav-item mx-1"><span data-feather="log-in"></span><span class="d-inline">&nbsp;Entrar</span></li>
-              <li class="nav-item mx-1"><span data-feather="search"></span><span class="d-inline d-md-none d-lg-inline">&nbsp;Pesquisar</span></li>
-              <li id="myCart" class="nav-item mx-1"><span data-feather="shopping-cart"></span><span class="d-inline">&nbsp;Carrinho</span></li>
+              <li id="myCart" class="nav-item mx-1"><span data-feather="shopping-cart"></span><span class="d-inline">&nbsp;<a class="d-inline" href="carrinho.html">Carrinho</a></span></li>
+              <li class="nav-item mx-1">
+                <a class="nav-link dropdown-toggle no-icon w-100" href="#!" id="navbarDropdown-pesquisar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="">
+                  <span data-feather="search"></span><span class="d-inline d-md-none d-lg-inline">Pesquisar</span>
+                </a>
+                <div id="searchbar" class="dropdown-menu hide my-3 py-0 border-0 text-white" aria-labelledby="navbarDropdown-pesquisar" style="border-radius:0">
+                  <table class="d-inline d-md-none" style="float:left">
+                    <tr>
+                      <td><input type="text" name="searchQuery" placeholder="Pesquise aqui" size="30"></td>
+                      <td><input type="submit" value=">" style="color:blue"/></td>
+                    </tr>
+                  </table>
+                  <table class="d-none d-md-block d-lg-none" style="float:left">
+                    <tr>
+                      <td><input type="text" name="searchQuery" placeholder="Pesquise aqui" size="28"></td>
+                      <td><input type="submit" value=">" style="color:blue"/></td>
+                    </tr>
+                  </table>
+                  <table class="d-none d-lg-block d-xl-none" style="float:left">
+                    <tr>
+                      <td><input type="text" name="searchQuery" placeholder="Pesquise aqui" size="35"></td>
+                      <td><input type="submit" value=">" style="color:blue"/></td>
+                    </tr>
+                  </table>
+                  <table class="d-none d-xl-block" style="float:left">
+                    <tr>
+                      <td><input type="text" name="searchQuery" placeholder="Pesquise aqui" size="45"></td>
+                      <td><input type="submit" value=">" style="color:blue"/></td>
+                    </tr>
+                  </table>
+
+
+                </div>
+              </li>
             </ul>
           </div>
           <div class="order-2 d-inline-block d-md-none text-right ">
@@ -92,9 +124,15 @@
           </div>
         </div>
       </div>
-      <div class="container d-none">
-        
-      </div>
+      <!--Cart preview incomplete
+       <div id="cartPreview" class="">
+        <div class="cartpreviewL d-none d-md-block">
+          <a class="btn btn-light d-block text-center" href="preco.html">Ir ao Carrinho</a>
+        </div>
+        <div class="d-block d-md-none">
+          <a class="btn btn-light d-block text-center" href="preco.html" style="display:block; width:100%">Aproveite as Ofertas</a>
+        </div>
+      </div> -->
     </header>
     <!-- building block -->
 <main>
@@ -332,7 +370,7 @@
   <!-- rodapé block -->
   <div class="w-100 NavBarBottom d-flex flex-row justify-content-around">
     <a class="nav-link text-secondary overflow-hidden" href="#">Topo do Site</a>
-    <a class="nav-link text-secondary overflow-hidden" href="#"><span class="d-inline">Ir para o Carrinho</span><span data-feather="shopping-cart"></span></a>
+    <a class="nav-link text-secondary overflow-hidden" href="carrinho.html"><span class="d-inline">Ir para o Carrinho</span><span data-feather="shopping-cart"></span></a>
   </div>
 </main>
 <footer class="container py-5">

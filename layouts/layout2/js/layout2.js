@@ -60,6 +60,7 @@ $(document).ready(function(){
 //cart onclick
 $(document).ready(function(){
   $("#myCart").click(function () {
+    $("#cartPreview").toggle();
     console.log("cart clicked");
   })
 
