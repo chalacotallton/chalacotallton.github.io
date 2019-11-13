@@ -51,20 +51,20 @@ input[type=number] {
 }
 .cart-header {
   color: black;
-  text-align: center;
+  text-align: left;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   font-weight: 600;
   box-sizing: border-box;
-  background-color: rgb(192,192,192);
+  background-color: white;
+  border-bottom: 2px solid black;
   line-height: 2.5rem;
   font-variant: small-caps;
 }
 .cart-footer {
   background: white;
   padding: 2.5%;
-  border-top: 1px solid silver;
   font-variant: small-caps;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -105,12 +105,16 @@ input[type=number] {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-
+  h1 {
+    font-size:2.3rem !important;
+    }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-
+  h1 {
+    font-size:3.5rem !important;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
