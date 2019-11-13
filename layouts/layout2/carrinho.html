@@ -84,8 +84,10 @@
           </div>
           <div class="col" style="text-align:center">
             <div class="row" style="height:100%">
-              <div class="col-4">
-                1
+              <div class="col-4" style="white-space: nowrap;">
+                <input type="button" value="-" class="button-minus" data-field="quantity">
+                <input type="number" name="quantity" min="0" max="5" step="1" value="1" style="text-align:center">
+                <input type="button" value="+" class="button-plus" data-field="quantity">
               </div>
               <div class="col-4">
                 R$ 39,99
@@ -116,8 +118,10 @@
           </div>
           <div class="col" style="text-align:center">
             <div class="row" style="height:100%">
-              <div class="col-4">
-                1
+              <div class="col-4" style="white-space: nowrap;">
+                <input type="button" value="-" class="button-minus" data-field="quantity">
+                <input type="number" name="quantity" min="0" max="5" step="1" value="1" style="text-align:center">
+                <input type="button" value="+" class="button-plus" data-field="quantity">
               </div>
               <div class="col-4">
                 R$ 44,99
@@ -148,8 +152,10 @@
           </div>
           <div class="col" style="text-align:center">
             <div class="row" style="height:100%">
-              <div class="col-4">
-                2
+              <div class="col-4" style="white-space: nowrap;">
+                <input type="button" value="-" class="button-minus" data-field="quantity">
+                <input type="number" name="quantity" min="0" max="5" step="1" value="2" style="text-align:center">
+                <input type="button" value="+" class="button-plus" data-field="quantity">
               </div>
               <div class="col-4">
                 R$ 24,99
@@ -206,16 +212,21 @@
     <div class="container">
       <div class="row">
         <div class="col-7">
-
+          <div class="frete" style="white-space: nowrap">
+            frete:&nbsp; <input id="cep" type="text" size="9" maxlength = "9">
+            <button type="button" class="btn btn-success btn-sm m-2" disabled>
+              Calcular
+            </button>
+          </div>
         </div>
         <div class="col">
           <div class="container" style="text-align:right">
-            <div class="lead font-weight-bold p-2" style="">
+            <div class="lead font-weight-bold p-2 " style="white-space: nowrap" style="vertical-align: middle;">
               Total da Compra: R$ 159,08
             </div>
-            <div class="btn btn-success btn-lg m-2">
+            <button type="button" class="btn btn-success btn-lg btn-block m-2" disabled>
               Pagamento
-            </div>
+            </button>
           </div>
         </div>
       </div>
