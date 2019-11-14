@@ -534,6 +534,9 @@ header a {
     overflow: hidden;
     box-sizing: border-box;
   }
+  .no-icon-md::after {
+    display: none;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   #jumbotron-text-content {
