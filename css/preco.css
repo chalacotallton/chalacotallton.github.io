@@ -40,17 +40,27 @@ html {
   }
 
 }
-
 #ddmenu {
   cursor: pointer;
   font-size: 28px;
 }
+#navbar {
+  z-index: 1050;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  left: 0;
+  background-color: rgba(37,37,41,1);
+  font-variant: small-caps;
+}
 #mobilenavbar {
   z-index: 1050;
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 0;
   background-color: rgba(37,37,41,1);
+  font-variant: small-caps;
+
 }
 
 @media screen and (min-width:768px) {

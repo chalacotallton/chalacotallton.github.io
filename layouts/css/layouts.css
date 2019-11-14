@@ -92,15 +92,8 @@ html {
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1359px) {
-  main {
-    width:90%;
-    margin: 0 auto;
-  }
 
 }
 @media only screen and (min-width: 1360px) {
-  main {
-    width:84%;
-    margin: 0 auto;
-  }
+
 }
