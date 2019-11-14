@@ -12,36 +12,42 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Meu Site">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/js.js"></script>
+    <script src="js/index.js"></script>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="css/preco.css" rel="stylesheet">
   </head>
-  <body>
-    <!-- building block -->
-    <nav id="navbar" class="site-header sticky-top py-1">
+<body>
+  <header class="sticky-top">
+    <nav id="navbar" class="site-header py-1">
       <div class="container d-flex flex-row justify-content-around">
         <a class="py-2 text-white" href="index.html">
            Logo here
         </a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Produto</a>
+        <a class="py-2 d-none d-md-inline-block" href="produto.html">Produto</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Empresa</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Suporte</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Preços</a>
+        <a class="py-2 d-none d-md-inline-block" href="empresa.html">Empresa</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Suporte&nbsp;<span class="d-inline d-md-none d-lg-inline" data-feather="help-circle"></span></a>
+        <a class="py-2 d-none d-md-inline-block" href="preco.html">Preços</a>
+        <a class="btn btn-outline-info py-2 d-none d-md-inline-block text-white" href="login.html">Autenticar Usuário</a>
       </div>
     </nav>
     <nav id="mobilenavbar" class="site-header py-1 d-md-none">
-      <a id="ddmenu" href="#" class="navbar-toggler py-2 px-3 d-flex justify-content-end d-md-none" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">|||</a>
-      <div  class="collapse navbar-collapse" id="navbarCollapse">
-        <a id="mobilenavbarContent" class="py-2 mx-3 d-block " href="#">Produto</a>
+      <div>
+        <a id="ddmenu" href="#" class="navbar-toggler py-1 px-3 d-flex justify-content-end d-md-none" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">&equiv;</a>
+      </div>
+      <div  class="collapse navbar-collapse mx-2 mb-2" id="navbarCollapse">
+        <a id="mobilenavbarContent" class="py-2 mx-3 d-block " href="produto.html">Produto</a>
         <a id="mobilenavbarContent" class="py-2 mx-3 d-block" href="#">Features</a>
-        <a id="mobilenavbarContent" class="py-2 mx-3 d-block" href="#">Empresa</a>
+        <a id="mobilenavbarContent" class="py-2 mx-3 d-block" href="empresa.html">Empresa</a>
         <a id="mobilenavbarContent" class="py-2 mx-3 d-block" href="#">Suporte</a>
-        <a id="mobilenavbarContent" class="py-2  mx-3 d-block" href="#">Preços</a>
+        <a id="mobilenavbarContent" class="py-2  mx-3 d-block" href="preco.html">Preços</a>
+        <a class="btn btn-outline-info py-2 d-block text-white" href="login.html">Autenticar Usuário</a>
       </div>
     </nav>
+  </header>
+  <!-- navbar block -->
     <!-- building block -->
 <main>
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">

@@ -13,14 +13,6 @@ html {
   min-width: 220px;
 }
 
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 
 .site-header {
@@ -46,14 +38,12 @@ html {
     -ms-flex: 1;
     flex: 1;
   }
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
+
 }
 
 #ddmenu {
   cursor: pointer;
-  color: #999 !important;
+  font-size: 28px;
 }
 #mobilenavbar {
   z-index: 1050;
