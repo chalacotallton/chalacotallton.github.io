@@ -20,9 +20,7 @@
   </head>
 <body>
     <!-- navbar block -->
-    <header>
-
-    </header>
+  <header>
     <nav id="navbar" class="site-header sticky-top py-1">
       <div class="container d-flex flex-row justify-content-around">
         <a class="py-2 mx-1 text-white" href="index.html">
@@ -31,9 +29,10 @@
         <a href="#" class=" py-2 mx-1 text-white"><span data-feather="log-in"></span><span class="">&nbsp;Entrar</span></a>
       </div>
     </nav>
+  </header>
     <!-- building block -->
 <main>
-  <!-- Large cart design -->
+  <!-- cart design -->
   <div class="container text-center" style="font-variant:small-caps">
     <h1 class="lead">My Ecommerce <span data-feather="aperture"></span></h1>
   </div>
@@ -72,7 +71,8 @@
                 <div class="">
 
                 </div>
-                <div class="">
+                <div class="descricao">
+                  Camiseta Colorida <br>
                   Cor: única <br>
                   Tamanho: M <br>
                   Código: ABC123
@@ -107,9 +107,10 @@
 
                 </div>
                 <div class="">
+                  Camiseta Friends cow <br>
                   Cor: Branca <br>
                   Tamanho: M <br>
-                  Código: ABC123
+                  Código: ACB123
                 </div>
               </div>
             </div>
@@ -141,6 +142,7 @@
 
                 </div>
                 <div class="">
+                  Conjunto Cuecas box <br>
                   Cor: Sortido <br>
                   Tamanho: G <br>
                   Código: ABC323
@@ -205,7 +207,7 @@
       </div>
     </div>
   </div>
-  <!-- cart Checkout block -->
+  <!-- Large cart Checkout block -->
   <div class="bg-light d-none d-md-block border-top border-bottom mt-3">
     <div class="container">
       <div class="row">
@@ -231,11 +233,79 @@
     </div>
 
   </div>
+
+  <!-- Small cart block -->
+  <div class="bg-light d-block d-md-none border-top border-bottom mt-2">
+    <div class="container py-0"  style="padding-right: 3px; padding-left:3px">
+      <div class="cart-header lead">
+        meu carrinho (3 itens)
+      </div>
+      <div class="cart-body">
+        <div class="row title">
+          <div class="col">
+
+          </div>
+        </div>
+        <div class="row item-sm my-2 py-2 border-bottom">
+          <div class="col">
+              <div class="img-thumbnail">
+                <img class="img img-fluid" src="img/thumb-cart1.jpg" alt="primeiro item">
+              </div>
+          </div>
+          <div class="col">
+            <p style="color:black;">
+              Camiseta Colorida
+              Cor: única <br>
+              Tamanho: M <br>
+              Código: ABC123
+            </p>
+          </div>
+          <div class="px-2">
+            <p>adicionar valor qtd preço total remover editar asd</p>
+          </div>
+        </div>
+        <div class="row item-sm my-2 py-2 border-bottom">
+          <div class="col">
+              <div class="img-thumbnail">
+                <img class="img img-fluid" src="img/thumb-cart2.jpg" alt="primeiro item">
+              </div>
+          </div>
+          <div class="col">
+            <p style="color:black;">
+              Camiseta Friends cow <br>
+              Cor: Branca <br>
+              Tamanho: M <br>
+              Código: ACB123
+            </p>
+          </div>
+        </div>
+        <div class="row item-sm my-2 py-2 border-bottom">
+          <div class="col">
+              <div class="img-thumbnail">
+                <img class="img img-fluid" src="img/thumb-cart3.jpg" alt="primeiro item">
+              </div>
+          </div>
+          <div class="col">
+            <p style="color:black;">
+              Conjunto Cuecas box <br>
+              Cor: Sortido <br>
+              Tamanho: G <br>
+              Código: ABC323
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cart-footer">
+        footer here
+      </div>
+    </div>
+  </div>
+  <!-- Small cart Checkout block -->
 </main>
 <footer class="mt-3">
   <!-- rodapé block -->
-  <div class="NavBarBottom">
-    <div class="container d-flex flex-row justify-content-around">
+  <div class="NavBarBottom" style="font-size:0.8rem">
+    <div class="container d-flex flex-row justify-content-around" style="width:100%; text-align:center">
       <a class="nav-link text-secondary overflow-hidden" href="#">Topo do Site</a>
       <a class="py-2 text-white" href="index.html">
          My Ecommerce <span data-feather="aperture"></span>
