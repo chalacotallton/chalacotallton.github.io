@@ -1,19 +1,11 @@
 html {
-  font-size: 16px;
-}
-.container {
-  max-width: 800px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
-.pricing-header {
-  max-width: 700px;
-}
-
-.card-deck .card {
-  min-width: 220px;
-}
-
-
+/*
+ * Custom translucent site header
+ */
 
 .site-header {
   background-color: rgba(0, 0, 0, .85);
@@ -29,6 +21,10 @@ html {
   text-decoration: none;
 }
 
+/*
+ * Extra utilities
+ */
+
 .flex-equal > * {
   -ms-flex: 1;
   flex: 1;
@@ -38,8 +34,10 @@ html {
     -ms-flex: 1;
     flex: 1;
   }
-
 }
+
+.overflow-hidden { overflow: hidden; }
+.overflow-auto { overflow: auto; }
 #ddmenu {
   cursor: pointer;
   font-size: 28px;
@@ -55,12 +53,11 @@ html {
 }
 #mobilenavbar {
   z-index: 1050;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0;
   background-color: rgba(37,37,41,1);
   font-variant: small-caps;
-
 }
 
 @media screen and (min-width:768px) {
@@ -69,16 +66,34 @@ html {
     }
 
 }
-@media only screen and (min-width: 1200px) and (max-width: 1359px) {
-  main {
-    width:90%;
-    margin: 0 auto;
+@media screen and (min-width:992px) {
+
+}
+@media screen and (min-width:1200px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .img-fluid {
+    width:100% !important;
   }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1359px) {
 
 }
 @media only screen and (min-width: 1360px) {
-  main {
-    width:84%;
-    margin: 0 auto;
-  }
+
 }

@@ -25,20 +25,18 @@
     </header>
     <nav id="navbar" class="site-header sticky-top py-1">
       <div class="container d-flex flex-row justify-content-around">
-        <a class="py-2 text-white" href="index.html">
-           Logo here
+        <a class="py-2 mx-1 text-white" href="index.html">
+           My Ecommerce <span data-feather="aperture"></span>
         </a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Produto</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Empresa</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Suporte</a>
-        <a class="py-2 d-none d-md-inline-block" href="preco.html">Preços</a>
-        <a class="btn btn-outline-info py-2 d-none d-md-inline-block text-white" href="login.html">Autenticar Usuário</a>
+        <a href="#" class=" py-2 mx-1 text-white"><span data-feather="log-in"></span><span class="">&nbsp;Entrar</span></a>
       </div>
     </nav>
     <!-- building block -->
 <main>
   <!-- Large cart design -->
+  <div class="container text-center" style="font-variant:small-caps">
+    <h1 class="lead">My Ecommerce <span data-feather="aperture"></span></h1>
+  </div>
   <!-- Large cart block -->
   <div class="bg-light d-none d-md-block border-top border-bottom mt-3">
     <div class="container">
@@ -64,7 +62,7 @@
             </div>
           </div>
         </div>
-        <div class="row item">
+        <div class="row item py-2 pb-2" style="border-bottom: 1px solid silver">
           <div class="col-7">
             <div class="row">
               <div class="img-thumbnail col-auto ml-3">
@@ -84,8 +82,10 @@
           </div>
           <div class="col" style="text-align:center">
             <div class="row" style="height:100%">
-              <div class="col-4">
-                1
+              <div class="col-4" style="white-space: nowrap;">
+                <input type="button" value="-" class="button-minus" data-field="quantity">
+                <input type="number" name="quantity" min="0" max="5" step="1" value="1" style="text-align:center">
+                <input type="button" value="+" class="button-plus" data-field="quantity">
               </div>
               <div class="col-4">
                 R$ 39,99
@@ -96,7 +96,7 @@
             </div>
           </div>
         </div>
-        <div class="row item">
+        <div class="row item py-2 pb-2" style="border-bottom: 1px solid silver">
           <div class="col-7">
             <div class="row">
               <div class="img-thumbnail col-auto ml-3">
@@ -116,8 +116,10 @@
           </div>
           <div class="col" style="text-align:center">
             <div class="row" style="height:100%">
-              <div class="col-4">
-                1
+              <div class="col-4" style="white-space: nowrap;">
+                <input type="button" value="-" class="button-minus" data-field="quantity">
+                <input type="number" name="quantity" min="0" max="5" step="1" value="1" style="text-align:center">
+                <input type="button" value="+" class="button-plus" data-field="quantity">
               </div>
               <div class="col-4">
                 R$ 44,99
@@ -128,7 +130,7 @@
             </div>
           </div>
         </div>
-        <div class="row item">
+        <div class="row item py-2 pb-2" style="border-bottom: 1px solid silver">
           <div class="col-7">
             <div class="row">
               <div class="img-thumbnail col-auto ml-3">
@@ -148,8 +150,10 @@
           </div>
           <div class="col" style="text-align:center">
             <div class="row" style="height:100%">
-              <div class="col-4">
-                2
+              <div class="col-4" style="white-space: nowrap;">
+                <input type="button" value="-" class="button-minus" data-field="quantity">
+                <input type="number" name="quantity" min="0" max="5" step="1" value="2" style="text-align:center">
+                <input type="button" value="+" class="button-plus" data-field="quantity">
               </div>
               <div class="col-4">
                 R$ 24,99
@@ -174,7 +178,7 @@
               <div class="col">
                 subtotal
               </div>
-              <div class="col">
+              <div class="col bg-light">
                 R$ 134,96
               </div>
             </div>
@@ -192,7 +196,7 @@
               <div class="col">
                 frete
               </div>
-              <div class="col">
+              <div class="col bg-light">
                 R$ 24,12
               </div>
             </div>
@@ -206,16 +210,21 @@
     <div class="container">
       <div class="row">
         <div class="col-7">
-
+          <div class="frete" style="white-space: nowrap">
+            frete:&nbsp; <input id="cep" type="text" size="9" maxlength = "9">
+            <button type="button" class="btn btn-success btn-sm m-2" disabled>
+              Calcular
+            </button>
+          </div>
         </div>
         <div class="col">
           <div class="container" style="text-align:right">
-            <div class="lead font-weight-bold p-2" style="">
+            <div class="lead font-weight-bold p-2 " style="white-space: nowrap" style="vertical-align: middle;">
               Total da Compra: R$ 159,08
             </div>
-            <div class="btn btn-success btn-lg m-2">
+            <button type="button" class="btn btn-success btn-lg btn-block m-2" disabled>
               Pagamento
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -229,7 +238,7 @@
     <div class="container d-flex flex-row justify-content-around">
       <a class="nav-link text-secondary overflow-hidden" href="#">Topo do Site</a>
       <a class="py-2 text-white" href="index.html">
-         Logo here
+         My Ecommerce <span data-feather="aperture"></span>
       </a>
       <a class="nav-link text-secondary overflow-hidden" href="layout2.html"><span class="d-inline">Voltar para Pagina inicial</span></a>
     </div>
@@ -237,7 +246,7 @@
   <div class="container py-5">
     <div class="row">
       <div class="col-12 col-md">
-      LOGO
+      My Ecommerce <span data-feather="aperture"></span>
         <small class="d-block mb-3 text-muted">&copy; 2019</small>
       </div>
       <div class="col-6 col-md">

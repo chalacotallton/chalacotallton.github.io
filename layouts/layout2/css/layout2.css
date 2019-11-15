@@ -114,6 +114,9 @@ header a {
   cursor: pointer;
   position: relative;
 }
+.card.multi {
+  min-width: 0;
+}
 .card-hover-mask {
   background-color: black;
   position: absolute;
@@ -354,20 +357,35 @@ header a {
   filter: brightness(75%); /* For IE8 and earlier */
 
 }
-/*Cart preview*/
-/* #cartPreview {
-  display: none;
-  position: absolute;
-  right: 5%;
-  top: auto;
-
+.multi .carousel-control-prev-icon,
+.multi .carousel-control-next-icon {
+  height: 60px;
+  width: 60px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 2px dotted black;
+  background-image: none;
+  font-weight: 600;
+  line-height: 50px;
 }
-.cartpreviewL {
-  width: 250px;
-  height: 280px;
-  border: 1px solid black;
-  background-color: rgba(255,255,255,0.8);
-} */
+
+.multi .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 30px;
+  color: red;
+}
+
+.multi .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 30px;
+  color: red;
+}
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /*Media based criteria */
 @media screen and (min-width:768px) {
   #colecoes {
@@ -416,10 +434,6 @@ header a {
     font-weight: 600;
     font-variant: small-caps;
   }
-}
-.row {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 @media screen and (max-width:575px) {
   .sales-card {
@@ -519,6 +533,9 @@ header a {
     left: 60px;
     overflow: hidden;
     box-sizing: border-box;
+  }
+  .no-icon-md::after {
+    display: none;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

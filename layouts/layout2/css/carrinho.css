@@ -3,9 +3,17 @@ html {
   margin: 0 auto;
 }
 
-/*
- * Custom translucent site header
- */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
 .btn-success {
   cursor: pointer;
 }
@@ -43,20 +51,20 @@ html {
 }
 .cart-header {
   color: black;
-  text-align: center;
+  text-align: left;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   font-weight: 600;
   box-sizing: border-box;
-  background-color: rgb(192,192,192);
+  background-color: white;
+  border-bottom: 2px solid black;
   line-height: 2.5rem;
   font-variant: small-caps;
 }
 .cart-footer {
   background: white;
   padding: 2.5%;
-  border-top: 1px solid silver;
   font-variant: small-caps;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -71,7 +79,17 @@ html {
 .NavBarBottom a:hover {
   color: white !important;
 }
-
+.frete {
+  height: 100%;
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: center; /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+}
+.frete div {
+   -webkit-flex: 1; /* Safari 6.1+ */
+   flex: 1;
+}
 @media screen and (min-width:768px) {
 	h1 {
 		font-size:4rem !important;
@@ -87,12 +105,16 @@ html {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-
+  h1 {
+    font-size:2.3rem !important;
+    }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-
+  h1 {
+    font-size:3.5rem !important;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {

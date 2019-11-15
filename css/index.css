@@ -60,6 +60,7 @@ html {
   right: 0;
   left: 0;
   background-color: rgba(37,37,41,1);
+  font-variant: small-caps;
 }
 #mobilenavbar {
   z-index: 1050;
@@ -67,6 +68,8 @@ html {
   top: 0px;
   right: 0;
   background-color: rgba(37,37,41,1);
+  font-variant: small-caps;
+
 }
 
 .bg-salmao {

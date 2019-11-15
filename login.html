@@ -12,22 +12,23 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Meu Site">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/template.js"></script>
+    <script src="js/login.js"></script>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="css/login.css" rel="stylesheet">
   </head>
   <body>
-    <!-- building block -->
-    <nav id="navbar" class="site-header sticky-top py-1">
-      <div class="container d-flex flex-row justify-content-around">
-        <a class="py-2 text-white" href="index.html">
-           Logo here
-        </a>
-      </div>
-    </nav>
-
+    <!-- navbar block -->
+    <header class="sticky-top">
+      <nav id="navbar" class="site-header  py-1">
+        <div class="container d-flex flex-row justify-content-around">
+          <a class="py-2 text-white" href="index.html" style="font-variant: small-caps;">
+            <span data-feather="shopping-bag"></span> Ecommerce Fácil <span data-feather="monitor"></span>
+          </a>
+        </div>
+      </nav>
+    </header>
     <!-- building block -->
 <main>
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
@@ -124,5 +125,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Icons -->
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
 </body>
 </html>
