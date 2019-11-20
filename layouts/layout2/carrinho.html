@@ -230,11 +230,19 @@
     <div class="container">
       <div class="row">
         <div class="col-7">
-          <div class="frete" style="white-space: nowrap">
-            frete:&nbsp; <input id="cep" type="text" size="9" maxlength = "9">
-            <button type="button" class="btn btn-success btn-sm m-2" disabled>
-              Calcular
-            </button>
+          <div class="container">
+            <div class="frete" style="white-space: nowrap">
+              frete:&nbsp; <input id="cep" type="text" size="9" maxlength = "9" placeholder="CEP">
+              <button type="button" class="btn btn-success btn-sm m-2" disabled>
+                Calcular
+              </button>
+            </div>
+            <div class="cupom" style="white-space: nowrap">
+              Cupom de Desconto:&nbsp; <input type="text" size="9" maxlength = "9">
+              <button type="button" class="btn btn-success btn-sm m-2" disabled>
+                Aplicar
+              </button>
+            </div>
           </div>
         </div>
         <div class="col">
@@ -268,7 +276,7 @@
             </div>
             <div class="col">
               <p style="color:black;">
-                Camiseta Colorida
+                Camiseta Colorida <br>
                 Cor: única <br>
                 Tamanho: M <br>
                 Código: ABC123
@@ -385,15 +393,31 @@
         </div>
       </div>
       <div class="cart-footer">
-        <div class="">
-          frete (R$ 24,12)
-        </div>
-        <div class="">
-          cupom de desconto
-        </div>
-        <div class="">
-          Total: $159,08
-          <p class="btn btn-outline-dark">    finalizar compra</p>
+        <div class="container" style="text-align:right">
+          <div class="" style="white-space: nowrap">
+            frete:&nbsp; <input id="cep2" type="text" size="9" maxlength = "9" placeholder="CEP">
+            <button type="button" class="btn btn-success btn-sm m-2" disabled>
+              Calcular
+            </button>
+          </div>
+          <div class="cupom" style="white-space: nowrap">
+            Cupom de Desconto:&nbsp; <input type="text" size="9" maxlength = "9">
+            <button type="button" class="btn btn-success btn-sm m-2" disabled>
+              Aplicar
+            </button>
+          </div>
+          <div class="">
+            Subtotal: R$ 134,96
+          </div>
+          <div class="">
+            frete: R$ 24,12
+          </div>
+          <div class="lead font-weight-bold p-2 " style="white-space: nowrap" style="vertical-align: middle;">
+            Total da Compra: R$ 159,08
+          </div>
+          <button type="button" class="btn btn-success btn-lg btn-block m-2" disabled>
+            Pagamento
+          </button>
         </div>
       </div>
     </div>
