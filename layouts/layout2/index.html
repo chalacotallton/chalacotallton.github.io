@@ -12,6 +12,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Meu Site">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="js/layout2.js"></script>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -81,7 +82,7 @@
             <ul class="navbar-nav ml-auto">
               <li class="d-inline d-md-none"><br></li>
               <li class="nav-item mx-1"><span data-feather="log-in"></span><span class="d-inline">&nbsp;Entrar</span></li>
-              <li id="myCart" class="nav-item mx-1"><a class="d-inline" href="carrinho.html"><span data-feather="shopping-cart"></span><span class="d-inline">&nbsp;Carrinho</a></span></li>
+              <li id="myCart" class="nav-item mx-1"><a class="d-inline-block w-100" href="carrinho.html"><span data-feather="shopping-cart"></span><span class="d-inline">&nbsp;Carrinho</a></span></li>
               <li class="nav-item mx-1">
                 <a class="nav-link dropdown-toggle no-icon w-100" href="#!" id="navbarDropdown-pesquisar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="">
                   <span data-feather="search"></span><span class="d-inline d-md-none d-lg-inline">Pesquisar</span>
@@ -130,15 +131,6 @@
           </div>
         </div>
       </nav>
-      <!--Cart preview incomplete
-       <div id="cartPreview" class="">
-        <div class="cartpreviewL d-none d-md-block">
-          <a class="btn btn-light d-block text-center" href="preco.html">Ir ao Carrinho</a>
-        </div>
-        <div class="d-block d-md-none">
-          <a class="btn btn-light d-block text-center" href="preco.html" style="display:block; width:100%">Aproveite as Ofertas</a>
-        </div>
-      </div> -->
     </header>
     <!-- building block -->
 <main>
@@ -218,6 +210,9 @@
   </div>
   <!-- Carousel block -->
   <div class="mcontainer">
+    <div class="container d-md-none text-center lead my-0 py-0" style="font-size: 2rem; font-weight: bold">
+        <p class="mb-0 ">Navegue por Categoria</p>
+    </div>
   <div id="layoutCarrossel" class="carousel slide mx-md-3 d-md-none" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#layoutCarrossel" data-slide-to="0" class="active"></li>
@@ -265,7 +260,7 @@
   </div>
   <!-- vertical carousel -->
   <div style="background-color: #FFF7FC;">
-    <div class="container text-center lead my-0 py-0" style="font-size: 2rem; font-weight: bold">
+    <div class="container d-none d-md-block text-center lead my-0 py-0" style="font-size: 2rem; font-weight: bold">
         <p class="mb-0 ">Navegue por Categoria</p>
     </div>
     <div class="container d-none d-md-block" style="background-color: #FFF7FC; cursor:pointer;">
@@ -374,129 +369,173 @@
     <a class="btn btn-outline-secondary" href="preco.html">Quer conferir mais ofertas? Navegue por toda a liquidação!</a>
   </div>
   <!-- multi-item carousel block -->
-<div class="container" style="padding:0; text-align:center">
-  <h2 class="display-4">Mais Desejados</h2>
-  <div id="multiCarousel" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="row">
-        <div class="card multi col-6 col-md-3" style="width: 18rem;">
-          <img src="img/vitrine3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div class="container" style="padding:0; text-align:center">
+    <h2 class="display-4">Mais Desejados</h2>
+    <div id="multiCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="card multi col-6 col-md-3" style="width: 18rem;">
+            <img src="img/vitrine3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card multi col-6 col-md-3" style="width: 18rem;">
+            <img src="img/vitrine2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card multi col-6 col-md-3" style="width: 18rem;">
+            <img src="img/vitrine4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card multi col-6 col-md-3" style="width: 18rem;">
+            <img src="img/vitrine6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
         </div>
-        <div class="card multi col-6 col-md-3" style="width: 18rem;">
-          <img src="img/vitrine2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="card multi col-6 col-md-3 " style="width: 18rem;">
+            <img src="img/vitrine7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card multi col-6 col-md-3" style="width: 18rem;">
+            <img src="img/vitrine8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card multi col-6 col-md-3" style="width: 18rem;">
+            <img src="img/vitrine9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card multi col-6 col-md-3" style="width: 18rem;">
+            <img src="img/vitrine10.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
         </div>
-        <div class="card multi col-6 col-md-3" style="width: 18rem;">
-          <img src="img/vitrine4.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="card multi col-6 col-md-3" style="width: 18rem;">
+            <img src="img/vitrine11.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-        </div>
-        <div class="card multi col-6 col-md-3" style="width: 18rem;">
-          <img src="img/vitrine6.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card multi col-6 col-md-3" style="width: 18rem;">
+            <img src="img/vitrine12.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card multi col-6 col-md-3" style="width: 18rem;">
+            <img src="img/vitrine13.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card multi col-6 col-md-3" style="width: 18rem;">
+            <img src="img/vitrine14.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <div class="row">
-        <div class="card multi col-6 col-md-3 " style="width: 18rem;">
-          <img src="img/vitrine3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card multi col-6 col-md-3" style="width: 18rem;">
-          <img src="img/vitrine2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card multi col-6 col-md-3" style="width: 18rem;">
-          <img src="img/vitrine4.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card multi col-6 col-md-3" style="width: 18rem;">
-          <img src="img/vitrine6.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="row">
-        <div class="card multi col-6 col-md-3" style="width: 18rem;">
-          <img src="img/vitrine3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card multi col-6 col-md-3" style="width: 18rem;">
-          <img src="img/vitrine2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card multi col-6 col-md-3" style="width: 18rem;">
-          <img src="img/vitrine4.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card multi col-6 col-md-3" style="width: 18rem;">
-          <img src="img/vitrine6.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
+    <a class="carousel-control-prev multi" href="#multiCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next multi" href="#multiCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
     </div>
   </div>
-  <a class="carousel-control-prev multi" href="#multiCarousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next multi" href="#multiCarousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-  </div>
-</div>
+  <!-- follow us block -->
+  <section class="container lead" style="background-color:#fff1e0;">
+  <ul id="services">
+    <li>
+      <div class="facebook">
+        <a href="https://facebook.com/">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+      </div>
+      <span>Facebook</span>
+    </li>
+    <li>
+      <div class="twitter">
+        <a href="https://twitter.com/">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+      </div>
+      <span>Twitter</span>
+    </li>
+    <li>
+      <div class="youtube">
+        <a href="https://www.youtube.com/">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+      </div>
+      <span>YouTube</span>
+    </li>
+    <li>
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </div>
+      <span>Linkedin</span>
+    </li>
+    <li>
+      <div class="instagram">
+        <a href="https://www.instagram.com">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+      <span>Instagram</span>
+    </li>
+</section>
   <!-- rodapé block -->
   <div class="w-100 NavBarBottom d-flex flex-row justify-content-around">
     <a class="nav-link text-secondary overflow-hidden" href="#">Topo do Site</a>

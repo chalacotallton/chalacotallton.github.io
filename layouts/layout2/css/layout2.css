@@ -386,6 +386,49 @@ header a {
   padding-left: 15px;
   padding-right: 15px;
 }
+/* follow us section */
+section #services {
+  text-align: center;
+  transform: translatez(0);
+  padding-left: 0;
+}
+section #services li {
+  width: 100px;
+  height: 140px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  list-style: none;
+}
+section #services li div {
+  width: 100px;
+  height: 100px;
+  color: #ffbc96;
+  font-size: 3.4em;
+  text-align: center;
+  line-height: 100px;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+section #services li a {
+  color: #ffbc96
+}
+section #services li div:hover {
+  border-radius: 100px;
+}
+section #services li span {
+  width: 100px;
+  height: 20px;
+  display: block;
+  padding: 15px 0px;
+  color: #ff5c00;
+  font-variant: small-caps;
+  font-size: 1.2em;
+  text-align: center;
+}
+
 /*Media based criteria */
 @media screen and (min-width:768px) {
   #colecoes {
@@ -494,6 +537,26 @@ header a {
    overflow-y: auto;
    overflow-x: hidden;
  }
+ /* follow us section */
+ section #services li {
+   width: 49px;
+   height: 80px;
+   margin-top:10px;
+   margin-bottom: 10px;
+   margin-right: 2px;
+   margin-left: 2px;
+ }
+ section #services li div {
+   width: 49px;
+   height: 70px;
+   font-size: 2.5em;
+   line-height: 65px;
+
+ }
+ section #services li span {
+   font-size: 0.0em;
+   display: none;
+ }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -520,6 +583,28 @@ header a {
     max-height: 350px;
     overflow-y: auto;
     overflow-x: hidden;
+  }
+  /* follow us section */
+  section #services li {
+    width: 75px;
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  section #services li div {
+    width: 75px;
+    height: 80px;
+    font-size: 3.0em;
+    line-height: 80px;
+
+  }
+  section #services li span {
+    width: 75px;
+    height: 20px;
+    padding: 12px 0px;
+    font-size: 0.9em;
   }
 }
 

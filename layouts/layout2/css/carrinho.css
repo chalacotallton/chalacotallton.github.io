@@ -47,7 +47,6 @@ input[type=number] {
   height: 120px;
   box-sizing: content-box;
   padding: 0;
-
 }
 .cart-header {
   color: black;
@@ -73,7 +72,7 @@ input[type=number] {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  height: 48px;
+  /* height: 48px; */
   padding: 8px;
 }
 .NavBarBottom a:hover {
@@ -90,6 +89,10 @@ input[type=number] {
    -webkit-flex: 1; /* Safari 6.1+ */
    flex: 1;
 }
+.container {
+  max-width: 100% !important;
+}
+
 @media screen and (min-width:768px) {
 	h1 {
 		font-size:4rem !important;
@@ -117,8 +120,15 @@ input[type=number] {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-
+@media only screen and (min-width: 768px) and (max-width: 882px) {
+  .cart-body {
+    font-size: 0.85rem;
+  }
+}
+@media only screen and (min-width: 883px) and (max-width: 992px) {
+  .cart-body {
+    font-size: 0.95rem;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
