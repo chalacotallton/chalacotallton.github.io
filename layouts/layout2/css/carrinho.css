@@ -2,7 +2,9 @@ html {
   max-width: 1920px;
   margin: 0 auto;
 }
-
+.bg-btn {
+  background-color: rgba(192,192,192,0.2)
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
