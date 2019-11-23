@@ -391,6 +391,7 @@ section #services {
   text-align: center;
   transform: translatez(0);
   padding-left: 0;
+  margin-bottom: 1px;
 }
 section #services li {
   width: 100px;
